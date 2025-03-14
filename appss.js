@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let nowPlayingText = document.getElementById("now-playing");
     let songList = document.getElementById("genre-songs");
     let genreSelect = document.getElementById("genre-select");
-    let albumSection = document.getElementById("album-section"); // Para mawala kapag nagbago ng section
+    let albumSection = document.getElementById("album-section");
 
     let favoriteSongs = [];
 
@@ -17,79 +17,199 @@ document.addEventListener("DOMContentLoaded", function () {
         let songs = {
             "Explore": [
                 { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "All-Genres": [
                 { title: "Song 2", artist: "Unknown Artist", src: "assets/audio/song2.mp3", bg: "assets/images/song2.jpg" },
+                 { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Favorite": [
                 { title: "Blinding Lights", artist: "The Weeknd", src: "weeknd1.mp3", bg: "weeknd1.jpg" },
                 { title: "Levitating", artist: "Dua Lipa", src: "dua1.mp3", bg: "dua1.jpg" },
-                { title: "Save Your Tears", artist: "The Weeknd", src: "saveyourtears.mp3", bg: "saveyourtears.jpg" }
+                { title: "Save Your Tears", artist: "The Weeknd", src: "saveyourtears.mp3", bg: "saveyourtears.jpg" },
+                 { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Most Liked": [
                 { title: "Blinding Lights", artist: "The Weeknd", src: "weeknd1.mp3", bg: "weeknd1.jpg" },
                 { title: "Levitating", artist: "Dua Lipa", src: "dua1.mp3", bg: "dua1.jpg" },
-                { title: "Shape of You", artist: "Ed Sheeran", src: "shape.mp3", bg: "shape.jpg" }
+                { title: "Shape of You", artist: "Ed Sheeran", src: "shape.mp3", bg: "shape.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+             
             ],
             "Popular": [
                 { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", src: "uptown.mp3", bg: "uptown.jpg" },
                 { title: "Shape of You", artist: "Ed Sheeran", src: "shape.mp3", bg: "shape.jpg" },
-                { title: "Despacito", artist: "Luis Fonsi", src: "despacito.mp3", bg: "despacito.jpg" }
+                { title: "Despacito", artist: "Luis Fonsi", src: "despacito.mp3", bg: "despacito.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                
             ],
             "Disco": [
                 { title: "Stayin' Alive", artist: "Bee Gees", src: "stayin.mp3", bg: "stayin.jpg" },
                 { title: "Dancing Queen", artist: "ABBA", src: "dancingqueen.mp3", bg: "dancingqueen.jpg" },
-                { title: "September", artist: "Earth, Wind & Fire", src: "september.mp3", bg: "september.jpg" }
+                { title: "September", artist: "Earth, Wind & Fire", src: "september.mp3", bg: "september.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Electric Music": [
                 { title: "Titanium", artist: "David Guetta", src: "titanium.mp3", bg: "titanium.jpg" },
                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
-                { title: "Wake Me Up", artist: "Avicii", src: "wakemeup.mp3", bg: "wakemeup.jpg" }
+                { title: "Wake Me Up", artist: "Avicii", src: "wakemeup.mp3", bg: "wakemeup.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Folk Music": [
                 { title: "Take Me Home, Country Roads", artist: "John Denver", src: "countryroads.mp3", bg: "countryroads.jpg" },
                 { title: "The Sound of Silence", artist: "Simon & Garfunkel", src: "soundofsilence.mp3", bg: "soundofsilence.jpg" },
-                { title: "Blowin’ in the Wind", artist: "Bob Dylan", src: "blowininthewind.mp3", bg: "blowininthewind.jpg" }
+                { title: "Blowin’ in the Wind", artist: "Bob Dylan", src: "blowininthewind.mp3", bg: "blowininthewind.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Funk Music": [
                 { title: "Superstition", artist: "Stevie Wonder", src: "superstition.mp3", bg: "superstition.jpg" },
                 { title: "Give Up the Funk", artist: "Parliament", src: "giveupthefunk.mp3", bg: "giveupthefunk.jpg" },
-                { title: "Sex Machine", artist: "James Brown", src: "sexmachine.mp3", bg: "sexmachine.jpg" }
+                { title: "Sex Machine", artist: "James Brown", src: "sexmachine.mp3", bg: "sexmachine.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "HipHop": [
                 { title: "Lose Yourself", artist: "Eminem", src: "loseyourself.mp3", bg: "loseyourself.jpg" },
                 { title: "Sicko Mode", artist: "Travis Scott", src: "sicko.mp3", bg: "sicko.jpg" },
-                { title: "God's Plan", artist: "Drake", src: "godsplan.mp3", bg: "godsplan.jpg" }
+                { title: "God's Plan", artist: "Drake", src: "godsplan.mp3", bg: "godsplan.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Jazz": [
                 { title: "Take Five", artist: "Dave Brubeck", src: "takefive.mp3", bg: "takefive.jpg" },
                 { title: "Feeling Good", artist: "Nina Simone", src: "feelinggood.mp3", bg: "feelinggood.jpg" },
-                { title: "Fly Me to the Moon", artist: "Frank Sinatra", src: "flymetothemoon.mp3", bg: "flymetothemoon.jpg" }
+                { title: "Fly Me to the Moon", artist: "Frank Sinatra", src: "flymetothemoon.mp3", bg: "flymetothemoon.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "K-pop": [
                 { title: "Dynamite", artist: "BTS", src: "dynamite.mp3", bg: "dynamite.jpg" },
                 { title: "Kill This Love", artist: "BLACKPINK", src: "killthislove.mp3", bg: "killthislove.jpg" },
-                { title: "Lovesick Girls", artist: "BLACKPINK", src: "lovesickgirls.mp3", bg: "lovesickgirls.jpg" }
+                { title: "Lovesick Girls", artist: "BLACKPINK", src: "lovesickgirls.mp3", bg: "lovesickgirls.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Old OPM Song": [
                 { title: "Anak", artist: "Freddie Aguilar", src: "anak.mp3", bg: "anak.jpg" },
                 { title: "Banal Na Aso", artist: "Yano", src: "banalnaaso.mp3", bg: "banalnaaso.jpg" },
-                { title: "Kahit Maputi Na Ang Buhok Ko", artist: "Rey Valera", src: "kahitmaputi.mp3", bg: "kahitmaputi.jpg" }
+                { title: "Kahit Maputi Na Ang Buhok Ko", artist: "Rey Valera", src: "kahitmaputi.mp3", bg: "kahitmaputi.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Old Song": [
                 { title: "Hotel California", artist: "Eagles", src: "hotelcalifornia.mp3", bg: "hotelcalifornia.jpg" },
                 { title: "Stand by Me", artist: "Ben E. King", src: "standbyme.mp3", bg: "standbyme.jpg" },
-                { title: "Imagine", artist: "John Lennon", src: "imagine.mp3", bg: "imagine.jpg" }
+                { title: "Imagine", artist: "John Lennon", src: "imagine.mp3", bg: "imagine.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Pop-Music": [
                 { title: "Shape of You", artist: "Ed Sheeran", src: "shape.mp3", bg: "shape.jpg" },
                 { title: "Havana", artist: "Camila Cabello", src: "havana.mp3", bg: "havana.jpg" },
-                { title: "Someone Like You", artist: "Adele", src: "someone.mp3", bg: "someone.jpg" }
+                { title: "Someone Like You", artist: "Adele", src: "someone.mp3", bg: "someone.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ],
             "Rock": [
                 { title: "Bohemian Rhapsody", artist: "Queen", src: "bohemian.mp3", bg: "bohemian.jpg" },
                 { title: "Smells Like Teen Spirit", artist: "Nirvana", src: "nirvana.mp3", bg: "nirvana.jpg" },
-                { title: "Sweet Child O' Mine", artist: "Guns N' Roses", src: "sweetchild.mp3", bg: "sweetchild.jpg" }
+                { title: "Sweet Child O' Mine", artist: "Guns N' Roses", src: "sweetchild.mp3", bg: "sweetchild.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             ]
         };
 
@@ -167,11 +287,11 @@ document.addEventListener("DOMContentLoaded", function () {
         updatePage(category);
         loadSongs(category);
         
-        // I-HIDE ANG ALBUM SECTION
+
         if (category === "Explore") {
-            albumSection.style.display = "block"; // Pakita ulit sa Home
+            albumSection.style.display = "block"; 
         } else {
-            albumSection.style.display = "none"; // Itago sa ibang sections
+            albumSection.style.display = "none"; 
         }
     }
 
@@ -180,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updatePage(selectedGenre);
         loadSongs(selectedGenre);
 
-        // I-HIDE ANG ALBUM SECTION
+       
         albumSection.style.display = "none";
     }
 
@@ -188,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updatePage("Explore");
         loadSongs("Explore");
 
-        // IBALIK ANG ALBUM SECTION
+      
         albumSection.style.display = "block";
     }
 
@@ -196,16 +316,16 @@ document.addEventListener("DOMContentLoaded", function () {
         updatePage(artist);
         loadSongs(artist);
 
-        // I-HIDE ANG ALBUM SECTION KAPAG PUMILI NG ARTIST
+       
         albumSection.style.display = "none";
     }
 
-    // I-EXPORT ANG FUNCTIONS PARA MAGAMIT SA HTML ONCLICK
+
     window.changeCategory = changeCategory;
     window.changeGenre = changeGenre;
     window.goHome = goHome;
     window.loadArtist = loadArtist;
 
-    // DEFAULT LOAD NG SONGS
+    
     loadSongs("Explore");
 });
