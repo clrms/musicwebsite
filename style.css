@@ -34,6 +34,10 @@ body {
     margin-left: 270px;
     padding: 50px;
 }
+.content1 {
+    margin-left: 170px;
+    padding: 50px;
+}
 .header {
     display: flex;
     align-items: center;
@@ -147,8 +151,6 @@ body {
     font-size: 0.7em;
     font-weight: bold;
     margin-bottom: 20px;
-    
-
 
 }
 #album-section {
@@ -174,8 +176,110 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
+    position: relative;
 }
 
 .artist-card:hover {
     background-color: #555;
+}
+.mixed-section {
+    margin: 20px;
+    color: white;
+}
+
+#carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.song-card1 {
+    min-width: 150px;
+    height: 150px;
+    background-color: #555;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scroll-left {
+    left: 0;
+}
+
+.scroll-right {
+    right: 0;
+}
+/* General Styles */
+.recommend-song-section {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.recommend-song-section h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Recommended Song Card */
+.recommend-song-section .song-card {
+    width: 200px;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommend-song-section .song-card:hover {
+    transform: scale(1.05);
+}
+
+.recommend-song-section .song-title,
+.recommend-song-section .song-artist {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
 }
