@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorite Songs</title>
     <link rel="stylesheet" href="style.css">
-<script src="appss.js" defer></script>
+<script src="app.js" defer></script>
 
 
 </head>
@@ -17,6 +17,7 @@
             <button onclick="goAlbums()">ALBUMS</button>
             <button onclick="goPlaylist()">PLAYLIST</button>
             <button onclick="goArtist()">ARTIST</button>
+            
         </div>
         
     </div>
@@ -49,15 +50,8 @@
     </div>
 
 
-    <div class="player" id="player">
-        <p id="now-playing">Now Playing: </p>
-        <button onclick="prevSong()">⏮</button>
-        <button onclick="togglePlay()">▶</button>
-        <button onclick="nextSong()">⏭</button>
-        <button onclick="toggleFullscreen()">🔲</button>
-        <audio id="audio-player" controls></audio>
-    </div>
-        <div id="album-section">
+    <div class="content1">
+    <div id="album-section">
     <h2>Albums For You</h2>
     <div class="artist-list">
         <div class="artist-card" onclick="loadArtist('Bruno Mars')">
@@ -69,6 +63,46 @@
         <div class="artist-card" onclick="loadArtist('Aklas')">
             <p>Aklas</p>
         </div>
+        <div class="artist-card" onclick="loadArtist('Bruno Mars')">
+            <p>Bruno Mars</p>
+        </div>
+        <div class="artist-card" onclick="loadArtist('Hev-abi')">
+            <p>Hev-abi</p>
+        </div>
+        <div class="artist-card" onclick="loadArtist('Aklas')">
+            <p>Aklas</p>
+            
+        </div>
+    </div>
+    <div class="mixed-section">
+        <h2>Mixed for You</h2>
+        <div id="mixed-songs"></div>     
+        <div id="carousel-container">
+            <button class="scroll-btn scroll-left" onclick="scrollLeft()">‹</button>
+            <div id="carousel"></div>
+            <button class="scroll-btn scroll-right" onclick="scrollRight()">›</button>
+        </div>
+        
+        
+
+    </div>
+
+    <div class="recommend-song-section">
+        <h2>Recommended Song</h2>
+        <div id="recommend-song-container"></div>
+    </div>
+        
+        </div>
+    
+    <div class="player" id="player">
+        <p id="now-playing">Now Playing: </p>
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="togglePlay()">▶</button>
+        <button onclick="nextSong()">⏭</button>
+        <button onclick="toggleFullscreen()">🔲</button>
+        <audio id="audio-player" controls></audio>
+    </div>
+
     </div>
 </div>
 
