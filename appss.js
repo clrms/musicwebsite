@@ -29,32 +29,103 @@ document.addEventListener("DOMContentLoaded", function () {
             ],
             "All Genres": [
                 { title: "Song 2", artist: "Unknown Artist", src: "assets/audio/song2.mp3", bg: "assets/images/song2.jpg" },
+ { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
                 
             ],
             "Disco": [
                 { title: "Stayin' Alive", artist: "Bee Gees", src: "stayin.mp3", bg: "stayin.jpg" },
                 { title: "Dancing Queen", artist: "ABBA", src: "dancingqueen.mp3", bg: "dancingqueen.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
             
             ],
             "Electric Music": [
                 { title: "Titanium", artist: "David Guetta", src: "titanium.mp3", bg: "titanium.jpg" },
                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
                 
             ],
             "Folk Music": [
                 { title: "Take Me Home, Country Roads", artist: "John Denver", src: "countryroads.mp3", bg: "countryroads.jpg" },
+ { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
                 
             ],
             "Funk Music": [
                 { title: "Superstition", artist: "Stevie Wonder", src: "superstition.mp3", bg: "superstition.jpg" },
                 { title: "Give Up the Funk", artist: "Parliament", src: "giveupthefunk.mp3", bg: "giveupthefunk.jpg" },
+ { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
            
             ],
-            "HipHop": [
-                { title: "Lose Yourself", artist: "Eminem", src: "loseyourself.mp3", bg: "loseyourself.jpg" },
-                { title: "Sicko Mode", artist: "Travis Scott", src: "sicko.mp3", bg: "sicko.jpg" },
+
+"HipHop": [
+                { title: "Stayin' Alive", artist: "Bee Gees", src: "stayin.mp3", bg: "stayin.jpg" },
+                { title: "Dancing Queen", artist: "ABBA", src: "dancingqueen.mp3", bg: "dancingqueen.jpg" },
+ { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                
             
             ],
+            "Jazz": [
+                { title: "Titanium", artist: "David Guetta", src: "titanium.mp3", bg: "titanium.jpg" },
+                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                
+            ],
+            "K-pop": [
+                { title: "Take Me Home, Country Roads", artist: "John Denver", src: "countryroads.mp3", bg: "countryroads.jpg" },
+ { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                
+            ],
+            "Old OPM Song": [
+                { title: "Superstition", artist: "Stevie Wonder", src: "superstition.mp3", bg: "superstition.jpg" },
+                { title: "Give Up the Funk", artist: "Parliament", src: "giveupthefunk.mp3", bg: "giveupthefunk.jpg" },
+ { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+             
+            ],"Old Song": [
+                { title: "Stayin' Alive", artist: "Bee Gees", src: "stayin.mp3", bg: "stayin.jpg" },
+                { title: "Dancing Queen", artist: "ABBA", src: "dancingqueen.mp3", bg: "dancingqueen.jpg" },
+ { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+             
+            
+            ],
+            "Pop Music": [
+                { title: "Titanium", artist: "David Guetta", src: "titanium.mp3", bg: "titanium.jpg" },
+                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+ { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+  { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                
+            ],
+            "Rock": [
+                { title: "Take Me Home, Country Roads", artist: "John Denver", src: "countryroads.mp3", bg: "countryroads.jpg" },
+{ title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+ { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
+                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", 
+                
+            ],
+           
             "Favorite": [{ title: "Blinding Lights", artist: "The Weeknd", src: "weeknd1.mp3", bg: "weeknd1.jpg" }],
             "Most Liked": [{ title: "Levitating", artist: "Dua Lipa", src: "dua1.mp3", bg: "dua1.jpg" }],
             "Popular": [{ title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", src: "uptown.mp3", bg: "uptown.jpg" }],
