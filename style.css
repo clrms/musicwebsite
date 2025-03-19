@@ -255,6 +255,14 @@ header4 {
     margin-bottom: 10px;
 }
 
+#recommend-song-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 50px; 
+
+}
+
 /* Recommended Song Card */
 .recommend-song-section .song-card {
     background-color: #282828;
@@ -264,7 +272,7 @@ header4 {
     display: inline-block;
     position: relative;
     height: 200px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 
