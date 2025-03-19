@@ -340,7 +340,12 @@ loadRecommendedSong();
 function loadRecommendedSong() {
         recommendContainer.innerHTML = "";
 
-        let recommendedSongs = [{ title: "Shape of You", artist: "Ed Sheeran", src: "shapeofyou.mp3", bg: "shapeofyou.jpg" },
+        let recommendedSong = [{ title: "Shape of You", artist: "Ed Sheeran", src: "shapeofyou.mp3", bg: "shapeofyou.jpg" },
+        { title: "Blinding Lights", artist: "The Weeknd", src: "blindinglights.mp3", bg: "blindinglights.jpg" },
+        { title: "Levitating", artist: "Dua Lipa", src: "levitating.mp3", bg: "levitating.jpg" },
+        { title: "Stay", artist: "The Kid LAROI, Justin Bieber", src: "stay.mp3", bg: "stay.jpg" },
+        { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", src: "uptownfunk.mp3", bg: "uptownfunk.jpg" },
+        { title: "Shape of You", artist: "Ed Sheeran", src: "shapeofyou.mp3", bg: "shapeofyou.jpg" },
         { title: "Blinding Lights", artist: "The Weeknd", src: "blindinglights.mp3", bg: "blindinglights.jpg" },
         { title: "Levitating", artist: "Dua Lipa", src: "levitating.mp3", bg: "levitating.jpg" },
         { title: "Stay", artist: "The Kid LAROI, Justin Bieber", src: "stay.mp3", bg: "stay.jpg" },
@@ -348,27 +353,29 @@ function loadRecommendedSong() {
         ];
 
         
-        let randomSong = recommendedSongs[Math.floor(Math.random() * recommendedSongs.length)];
+        recommendedSong.forEach(song => {
 
-        let songCard = document.createElement("div");
+    let songCard = document.createElement("div");
     songCard.classList.add("song-card");
-    songCard.style.backgroundImage = `url(${randomSong.bg})`;
-
+    songCard.style.backgroundImage = `url(${song.bg})`;
+    
     let title = document.createElement("div");
     title.classList.add("song-title");
-    title.textContent = randomSong.title;
+    title.textContent = song.title;
 
     let artist = document.createElement("div");
     artist.classList.add("song-artist");
-    artist.textContent = randomSong.artist;
+    artist.textContent = song.artist;
 
     songCard.appendChild(title);
     songCard.appendChild(artist);
     recommendContainer.appendChild(songCard);
 
-    // Make song playable on click
+    
     songCard.addEventListener("click", function () {
-        playSong(randomSong);
+        playSong(song);
     });
+  })
+
 }
 });
