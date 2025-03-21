@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "55.jpg" },
 
             ],
-            "Funk": [
+            "Funk Music": [
                 { title: "Take Me Home, Country Roads", artist: "John Denver", src: "countryroads.mp3", bg: "31.jpg" },
                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "32.jpg" },
                 { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "33.jpg" },
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             ],
-            "Pop Music": [
+            "Pop-Music": [
                 { title: "Titanium", artist: "David Guetta", src: "titanium.mp3", bg: "11.jpg" },
                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "12.jpg" },
                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "13.png" },
