@@ -116,11 +116,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 
             ],
             "Rock": [
-                { title: "Take Me Home, Country Roads", artist: "John Denver", src: "countryroads.mp3", bg: "countryroads.jpg" },
-                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
-                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },     
+                { title: "Take Me Home, Country Roads", artist: "John Denver", src: "That Wrong Turn.mp3", bg: "countryroads.jpg" },
+                { title: "Before The Dawn", artist: "Judas Priest", src: "Judas Priest - Before The Dawn (Official Audio).mp3", bg: "animals.jpg" },
+                { title: "BOte dyaryo", artist: "Anlag Kupal", src: "Bote_t Dyaryo.mp3", bg: "animals.jpg" },     
                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3"}, 
-                
+
             ],
            
             "Favorite": [{ title: "Blinding Lights", artist: "The Weeknd", src: "weeknd1.mp3", bg: "weeknd1.jpg" },
