@@ -19,10 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
         let songs = {
             "Explore": [{ title: "Sandalan", artist: "6cyclemind", src: "6cyclemind - Sandalan (Lyrics).mp3", bg: "2.png" },
                 { title: "Fly Me To The Moon", artist: "Frank Sinatra", src: "Fly Me To The Moon (2008 Remastered).mp3", bg: "46.jpg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Freaky Friday", artist: "Lil Dicky", src: "Lil Dicky - Freaky Friday (Lyrics) ft. Chris Brown.mp3", bg: "8.jpg" },
+                { title: "Sun Flower", artist: "Post Malone", src: "Post Malone - Sunflower (Lyrics) ft. Swae Lee.mp3", bg: "9.jpg" },
+                { title: "Bye Bye Bye", artist: "NSYNC", src: "NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack).mp3", bg: "15.jpg" },
+                { title: "Kahit Maputi Na Ang Buhok Ko", artist: "Rey Valera", src: "Rey Valera - Kahit Maputi Na Ang Buhok Ko [Official Lyric Video].mp3", bg: "26.jpg" },
+                { title: "Bote at Dyaryo", artist: "Abrakdabra", src: "Bote_t Dyaryo.mp3", bg: "4.jpg" },
+                { title: "Shape of You", artist: "Ed Sheeran", src: "Ed Sheeran - Shape of You (Lyrics).mp3", bg: "14.png" },
+                { title: "Funkytown", artist: "Lipps Inc.", src: "Lipps Inc. - Funky Town (Lyrics).mp3", bg: "12.jpg" },
+                { title: "Tokyo Drift", artist: "Teriyaki Boyz", src: "Tokyo Drift (Fast & Furious) (From The Fast And The Furious_ Tokyo Drift Soundtrack).mp3", bg: "35.jpg" },
             ],
             "All Genres": [
                 { title: "Song 2", artist: "Unknown Artist", src: "assets/audio/song2.mp3", bg: "assets/images/song2.jpg" },
