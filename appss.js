@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             ],
             "Electric Music": [
-                { title: "Titanium", artist: "David Guetta", src: "titanium.mp3", bg: "titanium.jpg" },
-                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Titanium", artist: "David Guetta", src: "titanium.mp3", bg: "51.jpg" },
+                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "52.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "53.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "54.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "55.jpg" },
 
             ],
             "Funk": [
@@ -76,19 +76,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
             ],
             "Jazz": [
-                { title: "Titanium", artist: "David Guetta", src: "titanium.mp3", bg: "titanium.jpg" },
-                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
-                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Titanium", artist: "David Guetta", src: "titanium.mp3", bg: "46.jpg" },
+                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "47.jpg" },
+                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "48.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "49.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "50.jpg" },
 
             ],
             "K-pop": [
-                { title: "Take Me Home, Country Roads", artist: "John Denver", src: "countryroads.mp3", bg: "countryroads.jpg" },
-                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
-                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
-                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "ao.jpeg" },
+                { title: "Take Me Home, Country Roads", artist: "John Denver", src: "countryroads.mp3", bg: "41.jpg" },
+                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "42.jpg" },
+                { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "43.jpg" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "44.png" },
+                { title: "Silhouette", artist: "KANA-BOON", src: "music1.mp3", bg: "45.jpg" },
 
             ],
             "Old OPM Song": [
