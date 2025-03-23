@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     let currentAudio = document.getElementById("audio-player");
     let nowPlayingText = document.getElementById("now-playing");
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadSongs(category) {
         songList.innerHTML = "";
 
-        let songs = {
+        let songs =  {
             "Explore": [{ title: "Sandalan", artist: "6cyclemind", src: "6cyclemind - Sandalan (Lyrics).mp3", bg: "2.png" },
                 { title: "Fly Me To The Moon", artist: "Frank Sinatra", src: "Fly Me To The Moon (2008 Remastered).mp3", bg: "46.jpg" },
                 { title: "Freaky Friday", artist: "Lil Dicky", src: "Lil Dicky - Freaky Friday (Lyrics) ft. Chris Brown.mp3", bg: "8.jpg" },
@@ -276,10 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { title: "As It Was", artist: "Harry Styles", src: "HarryStyles-As It Was.mp3", bg: "harry.jpeg"},  
                 { title: "Late Night Talking", artist: "Harry Styles", src: "HarryStyles-Late Night Talking.mp3", bg: "harry.jpeg"},  
             ],
-            "Recommend Song": [
-
-            ]
-        };
+        }
 
         let selectedSongs = songs[category] || [];
         selectedSongs.forEach(song => createSongCard(song));
@@ -331,7 +329,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         nowPlayingText.textContent = `Now Playing: ${song.title} - ${song.artist}`;
     }
-
     function changeGenre() {
         let selectedGenre = genreSelect.value;
         updatePage(selectedGenre);
@@ -363,7 +360,8 @@ window.loadArtist = loadArtist;
 
 loadSongs("Explore");
 
-    const mixedSongs = [
+
+ const mixedSongs = [
         { title: "Tibok", artist: "Earl Agustin", img: "tibok.jpg", src: "Tibok - Earl Agustin (Performance Video).mp3" },
         { title: "Sa Bawat Sandali", artist: "Amiel Sol", img: "bawat sandali.jpg", src: "Sa Bawat Sandali - Amiel Sol (Visualizer).mp3" },
         { title: "Marilag", artist: "Dionela", img: "marilag.jpg", src: "Dionela - Marilag (Official Lyric Video).mp3" },
@@ -416,7 +414,7 @@ loadSongs("Explore");
 
     loadMixedSongs();
 
-function loadRecommendedSong() {
+    function loadRecommendedSong() {
         recommendContainer.innerHTML = "";
 
         let recommendedSong = [{ title: "Luther", artist: " Kendrick Lamar", src: "Kendrick Lamar - luther (Official Audio).mp3", bg: "Luther.jpg" },
@@ -463,7 +461,9 @@ function loadRecommendedSong() {
         playSong(song);
     });
   })
-    function changeCategory(category) {
+
+}
+function changeCategory(category) {
     updatePage(category);
     loadSongs(category);
 
@@ -478,6 +478,4 @@ function loadRecommendedSong() {
     }
 }
 loadRecommendedSong();
-
-}
 });
