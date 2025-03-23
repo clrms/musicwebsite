@@ -364,27 +364,26 @@ window.loadArtist = loadArtist;
 loadSongs("Explore");
 
     const mixedSongs = [
-        { title: "My Supreme", artist: "Various", img: "supreme.jpg", src: "supreme.mp3" },
-        { title: "My Mix 1", artist: "Various", img: "mix1.jpg", src: "mix1.mp3" },
-        { title: "My Mix 2", artist: "Various", img: "mix2.jpg", src: "mix2.mp3" },
-        { title: "My Mix 3", artist: "Various", img: "mix3.jpg", src: "mix3.mp3" },
-        { title: "My Mix 4", artist: "Various", img: "mix4.jpg", src: "mix4.mp3" },
-        { title: "My Mix 5", artist: "Various", img: "mix5.jpg", src: "mix5.mp3" },
-        { title: "My Mix 6", artist: "Various", img: "mix6.jpg", src: "mix6.mp3" },
-        { title: "My Supreme", artist: "Various", img: "supreme.jpg", src: "supreme.mp3" },
-        { title: "My Mix 1", artist: "Various", img: "mix1.jpg", src: "mix1.mp3" },
-        { title: "My Mix 2", artist: "Various", img: "mix2.jpg", src: "mix2.mp3" },
-        { title: "My Mix 3", artist: "Various", img: "mix3.jpg", src: "mix3.mp3" },
-        { title: "My Mix 4", artist: "Various", img: "mix4.jpg", src: "mix4.mp3" },
-        { title: "My Mix 5", artist: "Various", img: "mix5.jpg", src: "mix5.mp3" },
-        { title: "My Mix 6", artist: "Various", img: "mix6.jpg", src: "mix6.mp3" },
-        { title: "My Supreme", artist: "Various", img: "supreme.jpg", src: "supreme.mp3" },
-        { title: "My Mix 1", artist: "Various", img: "mix1.jpg", src: "mix1.mp3" },
-        { title: "My Mix 2", artist: "Various", img: "mix2.jpg", src: "mix2.mp3" },
-        { title: "My Mix 3", artist: "Various", img: "mix3.jpg", src: "mix3.mp3" },
-        { title: "My Mix 4", artist: "Various", img: "mix4.jpg", src: "mix4.mp3" },
-        { title: "My Mix 5", artist: "Various", img: "mix5.jpg", src: "mix5.mp3" },
-        { title: "My Mix 6", artist: "Various", img: "mix6.jpg", src: "mix6.mp3" },
+        { title: "Tibok", artist: "Earl Agustin", img: "tibok.jpg", src: "Tibok - Earl Agustin (Performance Video).mp3" },
+        { title: "Sa Bawat Sandali", artist: "Amiel Sol", img: "bawat sandali.jpg", src: "Sa Bawat Sandali - Amiel Sol (Visualizer).mp3" },
+        { title: "Marilag", artist: "Dionela", img: "marilag.jpg", src: "Dionela - Marilag (Official Lyric Video).mp3" },
+        { title: "Isa Lang", artist: "Arthur Nery", img: "isa lang.jpg", src: "Isa lang - Arthur Nery (Official Lyric Visualizer).mp3" },
+        { title: "Okishina", artist: "Dionela", img: "Okishina.jpg", src: "Dionela - Oksihina (Official Lyric Video).mp3" },
+        { title: "Dilaw", artist: "Dilaw", img: "Dilaw.jpg", src: "@Dilaw  - Uhaw (Tayong Lahat) (Lyrics).mp3" },
+        { title: "Misteryoso", artist: "Cup of joe", img: "Misteryoso.jpg", src: "Misteryoso - Cup of Joe (Official Music Video).mp3" },
+        { title: "Palagi", artist: "Tj Monterde", img: "Palagi.jpg", src: "PALAGI - TJxKZ  LIVE SESSIONS.mp3" },
+        { title: "Pantropiko", artist: "Bini", img: "Pantropiko.jpg", src: "#BINI _ Pantropiko Performance Video  BINI.mp3" },
+        { title: "Estranghero", artist: "Cup of Joe", img: "Estranghero.jpg", src: "Cup of Joe - Estranghero (Official Music Video).mp3" },
+        { title: "Leonora", artist: "Sugarcane", img: "Leonora.jpg", src: "SUGARCANE - Leonora (Official Lyric Video).mp33" },
+        { title: "Mundo", artist: "IV of Spades", img: "Mundo.jpg", src: "Mundo.mp3" },
+        { title: "Ulap", artist: "Rob Daniel", img: "Ulap.jpg", src: "Rob Deniel - Ulap.mp3" },
+        { title: "Paraluman", artist: "Adie", img: "Paraluman.jpg", src: "Adie - Paraluman (Official Lyric Video).mp3" },
+        { title: "Uhaw", artist: "Dilaw", img: "Uhaw.jpg", src: "@Dilaw  - Uhaw (Tayong Lahat) (Lyrics).mp3" },
+        { title: "Bumalik Kana Sakin", artist: "Solent Sanctuary", img: "Bumalik Ka Na Sakin.jpg", src: "Silent Sanctuary - Bumalik Ka Na Sa'kin (Official Lyric Video).mp3" },
+        { title: "Ikot", artist: "Over Octeber", img: "Ikot.jpg", src: "Over October - Ikot (Official Lyric Video).mp3" },
+        { title: "Umaasa", artist: "Calein", img: "Umaasa", src: "Calein - Umaasa (Official Lyric Video).mp3" },
+        { title: "Oo", artist: "Up Dharma Down", img: "Oo-Up Dharma Down.jpg", src: "OO - Up Dharma Down (Official Lyric Video).mp3" },
+        { title: "Ikaw Lang", artist: "Nobita", img: "Ikaw Lang.jpg", src: "Ikaw Lang.mp3" },
     ];
 
     function loadMixedSongs() {
@@ -420,16 +419,24 @@ loadSongs("Explore");
 function loadRecommendedSong() {
         recommendContainer.innerHTML = "";
 
-        let recommendedSong = [{ title: "Shape of You", artist: "Ed Sheeran", src: "shapeofyou.mp3", bg: "shapeofyou.jpg" },
-        { title: "Blinding Lights", artist: "The Weeknd", src: "blindinglights.mp3", bg: "blindinglights.jpg" },
-        { title: "Levitating", artist: "Dua Lipa", src: "levitating.mp3", bg: "levitating.jpg" },
-        { title: "Stay", artist: "The Kid LAROI, Justin Bieber", src: "stay.mp3", bg: "stay.jpg" },
-        { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", src: "uptownfunk.mp3", bg: "uptownfunk.jpg" },
-        { title: "Shape of You", artist: "Ed Sheeran", src: "shapeofyou.mp3", bg: "shapeofyou.jpg" },
-        { title: "Blinding Lights", artist: "The Weeknd", src: "blindinglights.mp3", bg: "blindinglights.jpg" },
-        { title: "Levitating", artist: "Dua Lipa", src: "levitating.mp3", bg: "levitating.jpg" },
-        { title: "Stay", artist: "The Kid LAROI, Justin Bieber", src: "stay.mp3", bg: "stay.jpg" },
-        { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", src: "uptownfunk.mp3", bg: "uptownfunk.jpg" }
+        let recommendedSong = [{ title: "Luther", artist: " Kendrick Lamar", src: "Kendrick Lamar - luther (Official Audio).mp3", bg: "Luther.jpg" },
+        { title: "Blue", artist: "Yung Kai", src: "blue (Official Music Video).mp3", bg: "Blue.jpg" },
+        { title: "Diet With A Smile", artist: "Lady Gaga, Bruno Mars", src: "Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3", bg: "Die With A Smile.jpg" },
+        { title: "Birds of a Feather", artist: "Bellie Eilish", src: "Billie Eilish - BIRDS OF A FEATHER (Official Music Video).mp33", bg: "birds of a feather.jpg" },
+        { title: "BackBurner", artist: "Niki", src: "NIKI -  Backburner (Official Lyric Video).mp3", bg: "backburner.jpg" },
+        { title: "APT", artist: "Rose, Bruno Mars", src: "ROSÉ & Bruno Mars - APT..mp3", bg: "APT.jpg" },
+        { title: "Snooze", artist: "Sza", src: "SZA - Snooze (Audio).mp3", bg: "Snooze.jpg" },
+        { title: "Yellow", artist: "Cold Play", src: "Coldplay - Yellow (Official Video).mp3", bg: "Yellow.jpg" },
+        { title: "Goodluck Babe", artist: "Chappell Roan", src: "Sabrina Carpenter - Good Luck, Babe! (Chappell Roan cover) in the Live Lounge.mp3", bg: "Goodluck, babe.jpg" },
+        { title: "Not Like Us", artist: "Kendrick Lamar", src: "Kendrick Lamar - Not Like Us.mp3", bg: "Not like us.jpg" },
+        { title: "Photograph", artist: "Ed Sheeran", src: "Ed Sheeran - Photograph (Official Lyric Video).mp3", bg: "photograph.jpg" },
+        { title: "Lazy Song", artist: "Bruno Mars", src: "Bruno Mars - The Lazy Song (Official Music Video).mp3", bg: "Lazy Song.jpg" },
+        { title: "The Scientist", artist: "Coldplay", src: "Coldplay - The Scientist (Official 4K Video).mp3", bg: "The Scientist.jpg" },
+        { title: "Plese Please Please", artist: "Sabrina Carpenter", src: "Sabrina Carpenter - Please Please Please (Official Video).mp3", bg: "Please please please.jpg" },
+        { title: "Swim", artist: "Chase Atlantic", src: "Chase Atlantic - SWIM (Official Music Video).mp3", bg: "swim.jpg" },
+        { title: "Love Story", artist: "Taylor Swift", src: "Taylor Swift - Love Story.mp3", bg: "Love story.jpg" },
+        { title: "Sanctuary", artist: "Joji", src: "Joji - Sanctuary (Official Video).mp3", bg: "Sanctuary.jpg" },
+        { title: "Malibu Nights", artist: "Lany", src: "LANY - Malibu Nights (Official Music Video).mp3", bg: "Malibu nights.jpg" }
         ];
 
 
