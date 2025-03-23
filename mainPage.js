@@ -246,14 +246,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3", bg: "animals.jpg" },     
                 { title: "Animals", artist: "Martin Garrix", src: "animals.mp3"},
                        ],
-            "Bruno Mars": [
+            "Olivia Rodrigo": [
                 { title: "Finesse", artist: "Bruno Mars", src: "Bruno-MarsFinesse.mp3", bg: "513DWcoo7UL.jpg" },
                 { title: "24K Magic", artist: "Bruno Mars", src: "BrunoMars-24kmagic.mp3", bg: "513DWcoo7UL.jpg" },
                 { title: "Chunky", artist: "Bruno Mars", src: "BrunoMars-Chunky.mp3", bg: "513DWcoo7UL.jpg" },
                 { title: "That's What I Like", artist: "Bruno Mars", src: "BrunoMars-ThatsWhatILike.mp3", bg: "513DWcoo7UL.jpg" },
                 { title: "Versace On The Floor", artist: "Bruno Mars", src: "BrunoMars-VersaceOnTheFloor.mp3", bg: "513DWcoo7UL.jpg" },      
             ],
-            "Hev-abi": [
+            "Ben & Ben": [
                 { title: "Alam Mo Ba Girl", artist: "Hev-abi", src: "HevAbi-AlamMoBaGirl", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
                 { title: "Binibiroksi", artist: "Hev-abi", src: "HevAbi-Binibiroksi", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
                 { title: "C2 Boyz", artist: "Hev-abi", src: "HevAbi-C2Boyz", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
@@ -265,7 +265,38 @@ document.addEventListener("DOMContentLoaded", function () {
                 { title: "Walang Alam", artist: "Hev-abi", src: "HevAbi-WalangAlam", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
                 { title: "drugr4ts", artist: "Hev-abi", src: "HevAbi-drugr4ts", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
             ],
-            "Harry Styles": [
+            "SB19": [
+                { title: "Daylight", artist: "Harry Styles", src: "Harry Styles - Daylight.mp3", bg: "harry.jpeg" },
+                { title: "Falling", artist: "Harry Styles", src: "Harry Styles - Falling.mp3", bg: "harry.jpeg" },
+                { title: "Golden", artist: "Harry Styles", src: "Harry Styles - Golden.mp3", bg: "harry.jpeg" },
+                { title: "Satellite", artist: "Harry Styles", src: "Harry Styles - Satellite.mp3", bg: "harry.jpeg" },     
+                { title: "Sweet Creature", artist: "Harry Styles", src: "Harry Styles - Sweet Creature.mp3", bg: "harry.jpeg"},  
+                { title: "Watermelon Sugar", artist: "Harry Styles", src: "Harry Styles - Watermelon Sugar.mp3", bg: "harry.jpeg" },
+                { title: "Sign Of The Times", artist: "Harry Styles", src: "Harry Styles-Sign of the times.mp3", bg: "harry.jpeg" },
+                { title: "Adore You", artist: "Harry Styles", src: "HarryStyles-Adore You.mp3", bg: "harry.jpeg" },     
+                { title: "As It Was", artist: "Harry Styles", src: "HarryStyles-As It Was.mp3", bg: "harry.jpeg"},  
+                { title: "Late Night Talking", artist: "Harry Styles", src: "HarryStyles-Late Night Talking.mp3", bg: "harry.jpeg"},  
+            ],
+             "Syd Hartha": [
+                { title: "Finesse", artist: "Bruno Mars", src: "Bruno-MarsFinesse.mp3", bg: "513DWcoo7UL.jpg" },
+                { title: "24K Magic", artist: "Bruno Mars", src: "BrunoMars-24kmagic.mp3", bg: "513DWcoo7UL.jpg" },
+                { title: "Chunky", artist: "Bruno Mars", src: "BrunoMars-Chunky.mp3", bg: "513DWcoo7UL.jpg" },
+                { title: "That's What I Like", artist: "Bruno Mars", src: "BrunoMars-ThatsWhatILike.mp3", bg: "513DWcoo7UL.jpg" },
+                { title: "Versace On The Floor", artist: "Bruno Mars", src: "BrunoMars-VersaceOnTheFloor.mp3", bg: "513DWcoo7UL.jpg" },      
+            ],
+            "Bruno Mars": [
+                { title: "Alam Mo Ba Girl", artist: "Hev-abi", src: "HevAbi-AlamMoBaGirl", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+                { title: "Binibiroksi", artist: "Hev-abi", src: "HevAbi-Binibiroksi", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+                { title: "C2 Boyz", artist: "Hev-abi", src: "HevAbi-C2Boyz", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+                { title: "From Torillo With Love", artist: "Hev-abi", src: "HevAbi-FromTorilloWithLove", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+                { title: "Introhan Ko Lang", artist: "Hev-abi", src: "HevAbi-IntrohanKoLang", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+                { title: "Kulay Downtown", artist: "Hev-abi", src: "HevAbi-Kulay Downtown", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+                { title: "Still", artist: "Hev-abi", src: "HevAbi-Still", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+                { title: "Sumugal", artist: "Hev-abi", src: "HevAbi-Sumugal", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+                { title: "Walang Alam", artist: "Hev-abi", src: "HevAbi-WalangAlam", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+                { title: "drugr4ts", artist: "Hev-abi", src: "HevAbi-drugr4ts", bg: "74f1598e949e7745dd1d78c58fe2869b.jpg" },
+            ],
+            "Katy Perry": [
                 { title: "Daylight", artist: "Harry Styles", src: "Harry Styles - Daylight.mp3", bg: "harry.jpeg" },
                 { title: "Falling", artist: "Harry Styles", src: "Harry Styles - Falling.mp3", bg: "harry.jpeg" },
                 { title: "Golden", artist: "Harry Styles", src: "Harry Styles - Golden.mp3", bg: "harry.jpeg" },
@@ -366,7 +397,7 @@ loadSongs("Explore");
         { title: "Sa Bawat Sandali", artist: "Amiel Sol", img: "bawat sandali.jpg", src: "Sa Bawat Sandali - Amiel Sol (Visualizer).mp3" },
         { title: "Marilag", artist: "Dionela", img: "marilag.jpg", src: "Dionela - Marilag (Official Lyric Video).mp3" },
         { title: "Isa Lang", artist: "Arthur Nery", img: "isa lang.jpg", src: "Isa lang - Arthur Nery (Official Lyric Visualizer).mp3" },
-        { title: "Okishina", artist: "Dionela", img: "Okishina.jpg", src: "Dionela - Oksihina (Official Lyric Video).mp3" },
+        { title: "Oksihina", artist: "Dionela", img: "Oksihina.jpg", src: "Dionela - Oksihina (Official Lyric Video).mp3" },
         { title: "Dilaw", artist: "Dilaw", img: "Dilaw.jpg", src: "@Dilaw  - Uhaw (Tayong Lahat) (Lyrics).mp3" },
         { title: "Misteryoso", artist: "Cup of joe", img: "Misteryoso.jpg", src: "Misteryoso - Cup of Joe (Official Music Video).mp3" },
         { title: "Palagi", artist: "Tj Monterde", img: "Palagi.jpg", src: "PALAGI - TJxKZ  LIVE SESSIONS.mp3" },
@@ -379,8 +410,8 @@ loadSongs("Explore");
         { title: "Uhaw", artist: "Dilaw", img: "Uhaw.jpg", src: "@Dilaw  - Uhaw (Tayong Lahat) (Lyrics).mp3" },
         { title: "Bumalik Kana Sakin", artist: "Solent Sanctuary", img: "Bumalik Ka Na Sakin.jpg", src: "Silent Sanctuary - Bumalik Ka Na Sa'kin (Official Lyric Video).mp3" },
         { title: "Ikot", artist: "Over Octeber", img: "Ikot.jpg", src: "Over October - Ikot (Official Lyric Video).mp3" },
-        { title: "Umaasa", artist: "Calein", img: "Umaasa", src: "Calein - Umaasa (Official Lyric Video).mp3" },
-        { title: "Oo", artist: "Up Dharma Down", img: "Oo-Up Dharma Down.jpg", src: "OO - Up Dharma Down (Official Lyric Video).mp3" },
+        { title: "Umaasa", artist: "Calein", img: "Umaasa.jpg", src: "Calein - Umaasa (Official Lyric Video).mp3" },
+        { title: "Oo", artist: "Up Dharma Down", img: "Oo - Up Dharma Down.jpg", src: "OO - Up Dharma Down (Official Lyric Video).mp3" },
         { title: "Ikaw Lang", artist: "Nobita", img: "Ikaw Lang.jpg", src: "Ikaw Lang.mp3" },
     ];
 
