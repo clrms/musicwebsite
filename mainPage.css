@@ -1,4 +1,40 @@
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1{
+    background-color: #610094;
+    max-height: 100vh;
+  }
+  
+  .topHeader {
+    background: #610094;
+    height: 8vh;
+    color: #2e0047;
+    font-size: 2rem;
+    position: relative;
+  }
+  
+  .topHeader h2 {
+    position: absolute;
+    text-align: left;
+    vertical-align: middle;
+    align-content: center;
+    margin-top: 15px;
+    margin-left: 10px;
+  
+    font-size: 2rem;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+  }
+  
+ 
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
