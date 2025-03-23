@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let albumSection = document.getElementById("album-section");
     let carousel = document.getElementById("carousel");
     let recommendContainer = document.getElementById("recommend-song-container");
+    let mixedSection = document.querySelector(".mixed-section");
+    let recommendedSection = document.querySelector(".recommend-song-section");
 
     let favoriteSongs = [];
 
@@ -330,38 +332,36 @@ document.addEventListener("DOMContentLoaded", function () {
         nowPlayingText.textContent = `Now Playing: ${song.title} - ${song.artist}`;
     }
 
-    function changeCategory(category) {
-        updatePage(category);
-        loadSongs(category);
-        albumSection.style.display = (category === "Explore") ? "block" : "none";
-    }
-
     function changeGenre() {
         let selectedGenre = genreSelect.value;
         updatePage(selectedGenre);
         loadSongs(selectedGenre);
         albumSection.style.display = "none";
+        mixedSection.style.display = "none";
+        recommendedSection.style.display = "none";
     }
-
+    
     function goHome() {
         updatePage("Explore");
         loadSongs("Explore");
         albumSection.style.display = "block";
+        mixedSection.style.display = "block";
+        recommendedSection.style.display = "block";
     }
-
+    
     function loadArtist(artist) {
         updatePage(artist);
         loadSongs(artist);
         albumSection.style.display = "none";
+        mixedSection.style.display = "none";
+        recommendedSection.style.display = "none";
     }
+window.changeCategory = changeCategory;
+window.changeGenre = changeGenre;
+window.goHome = goHome;
+window.loadArtist = loadArtist;
 
-    window.changeCategory = changeCategory;
-    window.changeGenre = changeGenre;
-    window.goHome = goHome;
-    window.loadArtist = loadArtist;
-
-    loadSongs("Explore");
-loadRecommendedSong();
+loadSongs("Explore");
 
     const mixedSongs = [
         { title: "My Supreme", artist: "Various", img: "supreme.jpg", src: "supreme.mp3" },
@@ -456,6 +456,21 @@ function loadRecommendedSong() {
         playSong(song);
     });
   })
+    function changeCategory(category) {
+    updatePage(category);
+    loadSongs(category);
+
+    if (category === "Explore") {
+        albumSection.style.display = "block";
+        mixedSection.style.display = "block";
+        recommendedSection.style.display = "block";
+    } else {
+        albumSection.style.display = "none";
+        mixedSection.style.display = "none";
+        recommendedSection.style.display = "none";
+    }
+}
+loadRecommendedSong();
 
 }
 });
