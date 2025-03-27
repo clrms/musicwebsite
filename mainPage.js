@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         homeSections.forEach(id => document.getElementById(id).classList.remove("hidden"));
         pageTitle.innerText = "Quick Play";
 
-        // ✅ Load Songs into Home Sections
+        
         loadSongs("quickPlaySongs", songsData.quickPlay);
         loadSongs("mixedSongs", songsData.mixedPlayer);
         loadSongs("recommendedSongsList", songsData.recommendedSongs);
@@ -24,12 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function loadSongs(sectionId, songsArray) {
         const section = document.getElementById(sectionId);
-        section.innerHTML = ""; // Clear previous songs
+        section.innerHTML = ""; 
         songsArray.forEach(song => {
             const songCard = document.createElement("div");
             songCard.classList.add("song-card");
             songCard.innerHTML = `
-                <img src="${song.img}"> <!-- 🔥 Image lang -->
+                <img src="${song.img}">
                 <div class="song-info">
                     <h3>${song.title}</h3>
                     <p>${song.artist}</p>
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p>${album.artist}</p>
             `;
             albumCard.addEventListener("click", function () {
-                showAlbumSongs(album); // ✅ Hindi mag-play ng song, lalabas lang ang songs
+                showAlbumSongs(album);
             });
             albumSection.appendChild(albumCard);
         });
@@ -91,14 +91,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img src="${song.img}">
                 <p>${song.title}</p>
             `;
-            songCard.addEventListener("click", () => playSong(song)); // ✅ Dito lang mag-play
+            songCard.addEventListener("click", () => playSong(song));
             albumSongsSection.appendChild(songCard);
         });
         showPage("albumSongsPage", album.artist);
     }
     
 
-    // ✅ Sidebar Navigation
     document.getElementById("homeBtn").addEventListener("click", showHome);
     document.getElementById("exploreBtn").addEventListener("click", function () {
         showPage("explorePage", "Explore");
@@ -113,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loadAlbums();
     });
 
-    // ✅ Genre & Categories Navigation
+   
     document.getElementById("genreSelect").addEventListener("change", function () {
         if (this.value) {
             showPage("categoryPage", this.value + " Songs");
