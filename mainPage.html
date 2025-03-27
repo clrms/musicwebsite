@@ -3,93 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Songs</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
+    <title>Music Player</title>
     <link rel="stylesheet" href="mainPage.css">
-    <script src="mainPage.js" defer></script>
-
 </head>
+<body>
 
-<body onload="loadHomeSongs()">
-    <div class="topHeader">
-        <h2>SoundScoop</h2>
-    </div>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#" id="homeBtn">Home</a></li>
+            <li><a href="#" id="exploreBtn">Explore</a></li>
+            <li><a href="#" id="samplesBtn">Samples</a></li>
+            <li><a href="#" id="albumBtn">Album</a></li>
+        </ul>
+    </aside>
 
-    <div class="sidebar">
-        <button onclick="goHome()">HOME</button>
-        <button onclick="goAlbums()">ALBUMS</button>
-        <button onclick="goPlaylist()">PLAYLIST</button>
-        <button onclick="goArtist()">ARTIST</button>
-    </div>
-
-    <div class="content">
-        <div class="header">
-            <span id="page-title">Explore</span>
-            <select id="genre-select" class="genre-dropdown" onchange="changeGenre()">
-                <option value="All Genres">All Genres</option>
-                <option value="Disco">Disco</option>
-                <option value="Electronic Music">Electronic Music</option>
-                <option value="Folk Music">Folk Music</option>
-                <option value="Funk Music">Funk Music</option>
-                <option value="HipHop">HipHop</option>
-                <option value="Jazz">Jazz</option>
-                <option value="K-pop">K-pop</option>
-                <option value="Old Song">Old Song</option>
-                <option value="P-pop">P-pop</option>
-                <option value="Pop Music">Pop Music</option>
-                <option value="Rap">Rap</option>
-                <option value="Reggae">Reggae</option>
-                <option value="Rock">Rock</option>
-            </select>
-            <div class="header1">
-                <span class="clickable" onclick="changeCategory('Favorite')">Favorite</span>
-                <span class="clickable" onclick="changeCategory('Most Liked')">Most Liked</span>
-                <span class="clickable" onclick="changeCategory('Popular')">Popular</span>
+   
+    <main id="mainContent">
+        <header>
+            <h1 id="pageTitle">Quick Play</h1>
+            <div class="category-buttons">
+                <select id="genreSelect">
+                    <option value="">All Genre</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="HipHop">Hip-Hop</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Disco">Disco</option>
+                </select>
+                <button class="category-btn" id="favoriteBtn">Favorite</button>
+                <button class="category-btn" id="mostLikedBtn">Most Liked</button>
+                <button class="category-btn" id="popularBtn">Popular</button>
             </div>
-        </div>
-        <div class="song-list" id="genre-songs"></div>
-    </div>
+        </header>
 
-    <div class="content1">
-        <div id="album-section">
-            <h2>Albums For You</h2>
-            <div class="artist-list">
-                <div class="artist-card" onclick="loadArtist('Olivia Rodrigo')"><p>Olivia Rodrigo</p></div>
-                <div class="artist-card" onclick="loadArtist('Ben & Ben')"><p>Ben & Ben</p></div>
-                <div class="artist-card" onclick="loadArtist('SB19')"><p>SB19</p></div>
-                <div class="artist-card" onclick="loadArtist('Syd Hartha')"><p>Syd Martha</p></div>
-                <div class="artist-card" onclick="loadArtist('Bruno Mars')"><p>Bruno Mars</p></div>
-                <div class="artist-card" onclick="loadArtist('Katy Perry')"><p>Katy Perry</p></div>
+        
+        <section id="quickPlay" class="song-section">
+            <h2>Quick Play</h2>
+            <div class="song-list" id="quickPlaySongs"></div>
+        </section>
+
+        <section id="mixedPlayer" class="song-section">
+            <h2>Mixed Player</h2>
+            <div class="song-list" id="mixedSongs"></div>
+        </section>
+
+        <section id="recommendedSongs" class="song-section">
+            <h2>Recommended Songs</h2>
+            <div class="song-list" id="recommendedSongsList"></div>
+        </section>
+
+     
+        <section id="categoryPage" class="hidden">
+            <h2 id="categoryTitle"></h2>
+            <div class="song-list" id="categorySongs"></div>
+        </section>
+
+        <section id="explorePage" class="hidden">
+            <h2>Explore</h2>
+            <div class="song-list" id="exploreSongs"></div>
+        </section>
+
+        <section id="samplesPage" class="hidden">
+            <h2>Samples</h2>
+            <div class="video-list" id="sampleVideos"></div>
+        </section>
+
+        <section id="albumPage" class="hidden">
+            <h2>Albums</h2>
+            <div class="album-list" id="albumArtists"></div> 
+        </section>  
+        
+
+        <section id="albumSongsPage" class="hidden">
+            <h2 id="albumTitle"></h2>
+            <div class="song-list" id="albumSongs"></div>
+        </section>
+
+       
+        <div id="musicPlayer">
+            <img id="playerImg" src="" alt="Song Image">
+            <div id="playerDetails">
+                <h2 id="playerTitle">Title</h2>
+                <p id="playerArtist">Artist</p>
             </div>
+            <audio id="audioPlayer" controls></audio>
         </div>
+    </main>
 
-        <div class="mixed-section" id="mixed-section">
-            <h2>Mixed for You</h2>
-            <div id="mixed-songs"></div>
-            <div id="carousel-container">
-                <button class="scroll-btn scroll-left" onclick="scrollLeft()">‹</button>
-                <div id="carousel"></div>
-                <button class="scroll-btn scroll-right" onclick="scrollRight()">›</button>
-            </div>
-        </div>
-
-        <div class="recommend-song-section" id="recommended-section">
-            <h2>Recommended Song</h2>
-            <div id="recommend-song-container"></div>
-        </div>
-    </div> 
-
-    <div class="player" id="player">
-        <p id="now-playing">Now Playing: </p>
-        <button onclick="prevSong()">⏮</button>
-        <button onclick="togglePlay()">▶</button>
-        <button onclick="nextSong()">⏭</button>
-        <button onclick="toggleFullscreen()">🔲</button>
-        <audio id="audio-player" controls></audio>
-    </div>
-
+    <script src="mainPage.js"></script>
+    <script src="musicHomepage.js"></script>
 </body>
 </html>
