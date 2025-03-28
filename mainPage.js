@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function showHome() {
         pages.forEach(id => document.getElementById(id).classList.add("hidden"));
         homeSections.forEach(id => document.getElementById(id).classList.remove("hidden"));
-        pageTitle.innerText = "Quick Play";
+        pageTitle.innerText = "Home";
 
         
         loadSongs("quickPlaySongs", songsData.quickPlay);
