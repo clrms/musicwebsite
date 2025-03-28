@@ -1,60 +1,464 @@
 const songsData = {
-    quickPlay: [
-        { title: "Shape of You", artist: "Ed Sheeran", img: "images/shape_of_you.jpg", src: "songs/shape_of_you.mp3" },
-        { title: "Blinding Lights", artist: "The Weeknd", img: "images/blinding_lights.jpg", src: "songs/blinding_lights.mp3" }
+    quickPlay: 
+           [{ title: "Sandalan", artist: "6cyclemind", src: "6cyclemind - Sandalan (Lyrics).mp3", bg: "2.png" },
+            { title: "Fly Me To The Moon", artist: "Frank Sinatra", src: "Fly Me To The Moon (2008 Remastered).mp3", bg: "46.jpg" },
+            { title: "Freaky Friday", artist: "Lil Dicky", src: "Lil Dicky - Freaky Friday (Lyrics) ft. Chris Brown.mp3", bg: "8.jpg" },
+            { title: "Sun Flower", artist: "Post Malone", src: "Post Malone - Sunflower (Lyrics) ft. Swae Lee.mp3", bg: "9.jpg" },
+            { title: "Bye Bye Bye", artist: "NSYNC", src: "NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack).mp3", bg: "15.jpg" },
+            { title: "Bote at Dyaryo", artist: "Abrakdabra", src: "Bote_t Dyaryo.mp3", bg: "4.jpg" },
+
     ],
     mixedPlayer: [
-        { title: "Uptown Funk", artist: "Bruno Mars", img: "images/uptown_funk.jpg", src: "songs/uptown_funk.mp3" },
-        { title: "Senorita", artist: "Shawn Mendes & Camila Cabello", img: "images/senorita.jpg", src: "songs/senorita.mp3" }
+        { title: "Funkytown", artist: "Lipps Inc.", src: "Lipps Inc. - Funky Town (Lyrics).mp3", bg: "12.jpg" },
+        { title: "Tokyo Drift", artist: "Teriyaki Boyz", src: "Tokyo Drift (Fast & Furious) (From The Fast And The Furious_ Tokyo Drift Soundtrack).mp3", bg: "35.jpg" },
+        { title: "Tibok", artist: "Earl Agustin", img: "tibok.jpg", src: "Tibok - Earl Agustin (Performance Video).mp3" },
+        { title: "Tibok", artist: "Earl Agustin", img: "tibok.jpg", src: "Tibok - Earl Agustin (Performance Video).mp3" },
+        { title: "Sa Bawat Sandali", artist: "Amiel Sol", img: "bawat sandali.jpg", src: "Sa Bawat Sandali - Amiel Sol (Visualizer).mp3" },
+        { title: "Marilag", artist: "Dionela", img: "marilag.jpg", src: "Dionela - Marilag (Official Lyric Video).mp3" },
     ],
     recommendedSongs: [
-        { title: "Someone Like You", artist: "Adele", img: "images/someone_like_you.jpg", src: "songs/someone_like_you.mp3" },
-        { title: "Roar", artist: "Katy Perry", img: "images/roar.jpg", src: "songs/roar.mp3" }
+        { title: "Luther", artist: " Kendrick Lamar", src: "Kendrick Lamar - luther (Official Audio).mp3", bg: "Luther.jpg" },
+        { title: "Blue", artist: "Yung Kai", src: "blue (Official Music Video).mp3", bg: "Blue.jpg" },
+        { title: "Diet With A Smile", artist: "Lady Gaga, Bruno Mars", src: "Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3", bg: "Die With A Smile.jpg" },
+        { title: "Birds of a Feather", artist: "Bellie Eilish", src: "Billie Eilish - BIRDS OF A FEATHER (Official Music Video).mp33", bg: "birds of a feather.jpg" },
+        { title: "APT", artist: "Rose, Bruno Mars", src: "ROSÉ & Bruno Mars - APT..mp3", bg: "APT.jpg" },
+        { title: "Snooze", artist: "Sza", src: "SZA - Snooze (Audio).mp3", bg: "Snooze.jpg" },
     ],
     explore: [
-        { title: "Levitating", artist: "Dua Lipa", img: "images/levitating.jpg", src: "songs/levitating.mp3" },
-        { title: "Stay", artist: "The Kid LAROI & Justin Bieber", img: "images/stay.jpg", src: "songs/stay.mp3" }
+        { title: "Clean Heart", artist: "Perfume Genius", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "DOA", artist: "St.Vincent", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "Bologna", artist: "Destroyer", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "You Said You Were Sorry", artist: "Selena Gomez", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "Oganesson", artist: "Tortoise", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "Physical", artist: "Dua Lipa Ft. Troye Sivan", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "Off To The ESSO", artist: "Aya", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "Break Me Down", artist: "Yukimi", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "Switch It", artist: "TOKiMONSTA Ft. Cakes da Killa", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "Jealousy", artist: "Yeji", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "Hop Disco", artist: "Derya Yildririm SimSek", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        { title: "Disease", artist: "Lady Gaga", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
     ],
     categories: {
         Favorite: [
-            { title: "Believer", artist: "Imagine Dragons", img: "images/believer.jpg", src: "songs/believer.mp3" },
-            { title: "Believer", artist: "Imagine Dragons", img: "images/believer.jpg", src: "songs/believer.mp3" },
-            { title: "Believer", artist: "Imagine Dragons", img: "images/believer.jpg", src: "songs/believer.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
         ],
         MostLiked: [
-            { title: "Happier", artist: "Marshmello & Bastille", img: "images/happier.jpg", src: "songs/happier.mp3" }
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
         ],
         Popular: [
-            { title: "Peaches", artist: "Justin Bieber", img: "images/peaches.jpg", src: "songs/peaches.mp3" }
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
         ]
     },
     genres: {
-        Pop: [
-            { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" }
+        Disco: [
+            { title: "Brother Louie", artist: "Modern Talking", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Never Gonna Give You Up", artist: "Ricky Astley", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Sayaw Mga Choy", artist: "Dimas Jap", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Material Girl", artist: "Madonna", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Macarena", artist: "Los Del Rio", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Stayin'Alive", artist: "Bee Gees", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "I Will Survive", artist: "Gloria Gaynor", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Lee Freak", artist: "Chic", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Funky Town", artist: "Lipps Inc.", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Don't Leave Me This Way", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Boogie Wonderland", artist: "Earth, Win & Fire", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Disco Inferno", artist: "The Trammps", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
         ],
-        Rock: [
-            { title: "Bohemian Rhapsody", artist: "Queen", img: "images/bohemian_rhapsody.jpg", src: "songs/bohemian_rhapsody.mp3" }
+        Electronic: [
+            { title: "Titanium", artist: "David Guetta Ft Sia", img: "images/bohemian_rhapsody.jpg", src: "songs/bohemian_rhapsody.mp3" },
+            { title: "Roses", artist: "The Chainsmokers ft Rozes", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Valodja", artist: "Shantel", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Sun Is Up", artist: "Inna", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Don't You Worry Child", artist: "Black Eyed Peasse, Shakira & David Guetta", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Levels", artist: "Avicii", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Animals", artist: "Martin Garrix", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Strobe", artist: "Deadmau5" , img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Clarity", artist: "Zedd Ft. Foxes", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Turn Down For What", artist: "Dj Snake & Lil Jon", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Ghost'n'Stuff", artist: "Deadmau5 ft. Rob Swire", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Wake Me up", artist: "Avicii", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        ],
+        Folk: [
+            { title: "Here Comes The Sun", artist: "The Beatles", img: "images/gods_plan.jpg", src: "songs/gods_plan.mp3" },
+            { title: "Illegal Smile", artist: "John Prine", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Riptide", artist: "Vance Joy", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Time In A Bottle", artist: "Jim Croce", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "The Lion's Roar", artist: "First Aid Kit", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Blowin In The Wind", artist: "Bob Dylan", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "The Sound Of The Silence", artist: "Saimon & Garfunkel", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Big Yellow Taxi", artist: "Joni Mitchell", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Take Me Home, Country Roads", artist: "John Denver", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Fast Car", artist: "Tracy Chapman", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Wagon Wheel", artist: "Old Crow Medicine Show", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Home", artist: "Edward Sharpe & The Magnetic Zeros", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+        ],
+        Funk: [
+    { "title": "Funk Do Bounce", "artist": "Mc GW", "img": "images/funk_do_bounce.jpg", "src": "songs/funk_do_bounce.mp3" },
+    { "title": "Murder In My Mind", "artist": "Kordhell", "img": "images/murder_in_my_mind.jpg", "src": "songs/murder_in_my_mind.mp3" },
+    { "title": "Glory", "artist": "Jungle", "img": "images/glory.jpg", "src": "songs/glory.mp3" },
+    { "title": "Orquestra Maldita", "artist": "Black Alien", "img": "images/orquestra_maldita.jpg", "src": "songs/orquestra_maldita.mp3" },
+    { "title": "Tokyo Drift", "artist": "Teriyaki Boyz", "img": "images/tokyo_drift.jpg", "src": "songs/tokyo_drift.mp3" },
+    { "title": "As It Was", "artist": "Harry Styles", "img": "images/as_it_was.jpg", "src": "songs/as_it_was.mp3" },
+            { "title": "Superstition", "artist": "Stevie Wonder", "img": "images/superstition.jpg", "src": "songs/superstition.mp3" },
+            { "title": "Uptown Funk", "artist": "Mark Ronson ft. Bruno Mars", "img": "images/uptown_funk.jpg", "src": "songs/uptown_funk.mp3" },
+            { "title": "Give Up The Funk", "artist": "Parliament", "img": "images/give_up_the_funk.jpg", "src": "songs/give_up_the_funk.mp3" },
+            { "title": "Get Up (I Feel Like Being a) Sex Machine", "artist": "James Brown", "img": "images/get_up_sex_machine.jpg", "src": "songs/get_up_sex_machine.mp3" },
+            { "title": "Jungle Boogie", "artist": "Kool & The Gang", "img": "images/jungle_boogie.jpg", "src": "songs/jungle_boogie.mp3" },
+            { "title": "Pick Up The Pieces", "artist": "Average White Band", "img": "images/pick_up_the_pieces.jpg", "src": "songs/pick_up_the_pieces.mp3" },
+            { "title": "Brick House", "artist": "Commodores", "img": "images/brick_house.jpg", "src": "songs/brick_house.mp3" },
         ],
         HipHop: [
-            { title: "God's Plan", artist: "Drake", img: "images/gods_plan.jpg", src: "songs/gods_plan.mp3" }
-        ]
+          { "title": "Low", "artist": "Flo Rida ft. T-Pain", "img": "images/low.jpg", "src": "songs/low.mp3" },
+    { "title": "I'll Be Missing You", "artist": "Puff Daddy ft. Faith Evans & 112", "img": "images/missing_you.jpg", "src": "songs/missing_you.mp3" },
+    { "title": "Freaky Friday", "artist": "Lil Dicky ft. Chris Brown", "img": "images/freaky_friday.jpg", "src": "songs/freaky_friday.mp3" },
+    { "title": "Sunflower", "artist": "Post Malone & Swae Lee", "img": "images/sunflower.jpg", "src": "songs/sunflower.mp3" },
+    { "title": "Walk on Water", "artist": "Eminem ft. Beyoncé", "img": "images/walk_on_water.jpg", "src": "songs/walk_on_water.mp3" },
+    { "title": "As It Was", "artist": "Harry Styles", "img": "images/as_it_was.jpg", "src": "songs/as_it_was.mp3" },
+    { "title": "Sicko Mode", "artist": "Travis Scott ft. Drake", "img": "images/sicko_mode.jpg", "src": "songs/sicko_mode.mp3" },
+    { "title": "God’s Plan", "artist": "Drake", "img": "images/gods_plan.jpg", "src": "songs/gods_plan.mp3" },
+    { "title": "Lose Yourself", "artist": "Eminem", "img": "images/lose_yourself.jpg", "src": "songs/lose_yourself.mp3" },
+    { "title": "Numb/Encore", "artist": "Jay-Z & Linkin Park", "img": "images/numb_encore.jpg", "src": "songs/numb_encore.mp3" },
+    { "title": "HUMBLE.", "artist": "Kendrick Lamar", "img": "images/humble.jpg", "src": "songs/humble.mp3" },
+    { "title": "No Role Modelz", "artist": "J. Cole", "img": "images/no_role_modelz.jpg", "src": "songs/no_role_modelz.mp3" },
+    { "title": "Juicy", "artist": "The Notorious B.I.G.", "img": "images/juicy.jpg", "src": "songs/juicy.mp3" },
+],
+"Jazz": [
+    { "title": "Fly Me To The Moon", "artist": "Frank Sinatra", "img": "images/fly_me_to_the_moon.jpg", "src": "songs/fly_me_to_the_moon.mp3" },
+    { "title": "From The Start", "artist": "Laufey", "img": "images/from_the_start.jpg", "src": "songs/from_the_start.mp3" },
+    { "title": "Dream A Little Dream Of Me", "artist": "Ella Fitzgerald", "img": "images/dream_a_little_dream.jpg", "src": "songs/dream_a_little_dream.mp3" },
+    { "title": "Songbird", "artist": "Eva Cassidy", "img": "images/songbird.jpg", "src": "songs/songbird.mp3" },
+    { "title": "My Foolish Heart", "artist": "Bill Evans", "img": "images/my_foolish_heart.jpg", "src": "songs/my_foolish_heart.mp3" },
+    { "title": "Take Five", "artist": "Dave Brubeck", "img": "images/take_five.jpg", "src": "songs/take_five.mp3" },
+    { "title": "What A Wonderful World", "artist": "Louis Armstrong", "img": "images/what_a_wonderful_world.jpg", "src": "songs/what_a_wonderful_world.mp3" },
+    { "title": "Autumn Leaves", "artist": "Nat King Cole", "img": "images/autumn_leaves.jpg", "src": "songs/autumn_leaves.mp3" },
+    { "title": "Misty", "artist": "Erroll Garner", "img": "images/misty.jpg", "src": "songs/misty.mp3" },
+    { "title": "Cheek to Cheek", "artist": "Ella Fitzgerald & Louis Armstrong", "img": "images/cheek_to_cheek.jpg", "src": "songs/cheek_to_cheek.mp3" },
+    { "title": "Blue in Green", "artist": "Miles Davis", "img": "images/blue_in_green.jpg", "src": "songs/blue_in_green.mp3" },
+    { "title": "In A Sentimental Mood", "artist": "Duke Ellington & John Coltrane", "img": "images/in_a_sentimental_mood.jpg", "src": "songs/in_a_sentimental_mood.mp3" }
+]       
+        "K-pop": [
+    { "title": "Bang Bang Bang", "artist": "BIGBANG", "img": "images/bang_bang_bang.jpg", "src": "songs/bang_bang_bang.mp3" },
+    { "title": "Love Shot", "artist": "EXO", "img": "images/love_shot.jpg", "src": "songs/love_shot.mp3" },
+    { "title": "Super Shy", "artist": "NewJeans", "img": "images/super_shy.jpg", "src": "songs/super_shy.mp3" },
+    { "title": "Gangnam Style", "artist": "PSY", "img": "images/gangnam_style.jpg", "src": "songs/gangnam_style.mp3" },
+    { "title": "Gentleman", "artist": "PSY", "img": "images/gentleman.jpg", "src": "songs/gentleman.mp3" },
+    { "title": "As It Was", "artist": "Harry Styles", "img": "images/as_it_was.jpg", "src": "songs/as_it_was.mp3" },
+ { "title": "Pink Venom", "artist": "BLACKPINK", "img": "images/pink_venom.jpg", "src": "songs/pink_venom.mp3" },
+    { "title": "Dynamite", "artist": "BTS", "img": "images/dynamite.jpg", "src": "songs/dynamite.mp3" },
+    { "title": "Hype Boy", "artist": "NewJeans", "img": "images/hype_boy.jpg", "src": "songs/hype_boy.mp3" },
+    { "title": "God’s Menu", "artist": "Stray Kids", "img": "images/gods_menu.jpg", "src": "songs/gods_menu.mp3" },
+    { "title": "Feel Special", "artist": "TWICE", "img": "images/feel_special.jpg", "src": "songs/feel_special.mp3" },
+    { "title": "Love Dive", "artist": "IVE", "img": "images/love_dive.jpg", "src": "songs/love_dive.mp3" },
+    { "title": "Super", "artist": "SEVENTEEN", "img": "images/super.jpg", "src": "songs/super.mp3" },
+
+]
+
+        "Old": [
+    { "title": "You Decorated My Life", "artist": "Kenny Rogers", "img": "images/you_decorated_my_life.jpg", "src": "songs/you_decorated_my_life.mp3" },
+    { "title": "Against All Odds", "artist": "Phil Collins", "img": "images/against_all_odds.jpg", "src": "songs/against_all_odds.mp3" },
+    { "title": "Somewhere Only We Know", "artist": "Keane", "img": "images/somewhere_only_we_know.jpg", "src": "songs/somewhere_only_we_know.mp3" },
+    { "title": "Lonely Is The Night", "artist": "Billy Squier", "img": "images/lonely_is_the_night.jpg", "src": "songs/lonely_is_the_night.mp3" },
+    { "title": "All My Life", "artist": "America", "img": "images/all_my_life.jpg", "src": "songs/all_my_life.mp3" },
+    { "title": "Kahit Maputi Na Ang Buhok Ko", "artist": "Rey Valera", "img": "images/kahit_maputi.jpg", "src": "songs/kahit_maputi.mp3" },
+    { "title": "Ako'y Sayo Ika'y Akin Lamang", "artist": "IAXE", "img": "images/akoy_sayo.jpg", "src": "songs/akoy_sayo.mp3" },
+    { "title": "Kasama Kang Tumanda", "artist": "Ogie Alcasid", "img": "images/kasama_kang_tumanda.jpg", "src": "songs/kasama_kang_tumanda.mp3" },
+    { "title": "Narda", "artist": "Kamikazee", "img": "images/narda.jpg", "src": "songs/narda.mp3" },
+    { "title": "Ikaw Na Nga", "artist": "Willie Revillame", "img": "images/ikaw_na_nga.jpg", "src": "songs/ikaw_na_nga.mp3" },
+     { "title": "Yesterday", "artist": "The Beatles", "img": "images/yesterday.jpg", "src": "songs/yesterday.mp3" },
+    { "title": "Hotel California", "artist": "Eagles", "img": "images/hotel_california.jpg", "src": "songs/hotel_california.mp3" },
+]
+      "P-pop": [
+    { "title": "Zero Pressure", "artist": "SB19", "img": "images/zero_pressure.jpg", "src": "songs/zero_pressure.mp3" },
+    { "title": "DAM", "artist": "BINI", "img": "images/dam.jpg", "src": "songs/dam.mp3" },
+    { "title": "Daleng Dale", "artist": "MNL48", "img": "images/daleng_dale.jpg", "src": "songs/daleng_dale.mp3" },
+    { "title": "Kalakal", "artist": "Alamat", "img": "images/kalakal.jpg", "src": "songs/kalakal.mp3" },
+    { "title": "Cherry On Top", "artist": "VXON", "img": "images/cherry_on_top.jpg", "src": "songs/cherry_on_top.mp3" },
+ { "title": "Gento", "artist": "SB19", "img": "images/gento.jpg", "src": "songs/gento.mp3" },
+    { "title": "Da Coconut Nut", "artist": "BINI", "img": "images/da_coconut_nut.jpg", "src": "songs/da_coconut_nut.mp3" },
+    { "title": "Asa Naman", "artist": "Alamat", "img": "images/asa_naman.jpg", "src": "songs/asa_naman.mp3" },
+    { "title": "Ikaw At Ako", "artist": "MNL48", "img": "images/ikaw_at_ako.jpg", "src": "songs/ikaw_at_ako.mp3" },
+    { "title": "Bang!", "artist": "VXON", "img": "images/bang.jpg", "src": "songs/bang.mp3" },
+    { "title": "Pano", "artist": "Zack Tabudlo", "img": "images/pano.jpg", "src": "songs/pano.mp3" },
+    { "title": "Paubaya", "artist": "Moira Dela Torre", "img": "images/paubaya.jpg", "src": "songs/paubaya.mp3" }
+          
+]
+
+        "Pop": [
+    { "title": "Happy", "artist": "Pharrell Williams", "img": "images/happy.jpg", "src": "songs/happy.mp3" },
+    { "title": "Funkytown", "artist": "Lipps Inc.", "img": "images/funkytown.jpg", "src": "songs/funkytown.mp3" },
+    { "title": "Dancing Queen", "artist": "ABBA", "img": "images/dancing_queen.jpg", "src": "songs/dancing_queen.mp3" },
+    { "title": "Shape Of You", "artist": "Ed Sheeran", "img": "images/shape_of_you.jpg", "src": "songs/shape_of_you.mp3" },
+    { "title": "Bye Bye Bye", "artist": "*NSYNC", "img": "images/bye_bye_bye.jpg", "src": "songs/bye_bye_bye.mp3" },
+  { "title": "Uptown Funk", "artist": "Mark Ronson ft. Bruno Mars", "img": "images/uptown_funk.jpg", "src": "songs/uptown_funk.mp3" },
+    { "title": "Can't Stop The Feeling!", "artist": "Justin Timberlake", "img": "images/cant_stop_the_feeling.jpg", "src": "songs/cant_stop_the_feeling.mp3" },
+    { "title": "Blinding Lights", "artist": "The Weeknd", "img": "images/blinding_lights.jpg", "src": "songs/blinding_lights.mp3" },
+    { "title": "Rolling In The Deep", "artist": "Adele", "img": "images/rolling_in_the_deep.jpg", "src": "songs/rolling_in_the_deep.mp3" },
+    { "title": "Bad Romance", "artist": "Lady Gaga", "img": "images/bad_romance.jpg", "src": "songs/bad_romance.mp3" },
+    { "title": "Shake It Off", "artist": "Taylor Swift", "img": "images/shake_it_off.jpg", "src": "songs/shake_it_off.mp3" },
+    { "title": "Firework", "artist": "Katy Perry", "img": "images/firework.jpg", "src": "songs/firework.mp3" }
+
+],
+        "Rap": [
+    { title: "Fly Baby", artist: "Queen", img: "images/bohemian_rhapsody.jpg", src: "songs/bohemian_rhapsody.mp3" }, 
+    { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+    { title: "Puff Me Up", artist: "Eminem", img: "images/eminem.jpg", src: "songs/lose_yourself.mp3" },
+    { title: "Wag Ipagsabi", artist: "Kendrick Lamar", img: "images/kendrick.jpg", src: "songs/humble.mp3" },
+    { title: "Pasay 2 Qc", artist: "Drake", img: "images/drake.jpg", src: "songs/gods_plan.mp3" },
+    { title: "Subomoto", artist: "J. Cole", img: "images/jcole.jpg", src: "songs/middle_child.mp3" },
+    { title: "Sicko Mode", artist: "Travis Scott", img: "images/travis.jpg", src: "songs/sicko_mode.mp3" },
+    { title: "Goosebumps", artist: "Travis Scott", img: "images/travis.jpg", src: "songs/goosebumps.mp3" },
+    { title: "Stan", artist: "Eminem", img: "images/eminem.jpg", src: "songs/stan.mp3" },
+    { title: "No Role Modelz", artist: "J. Cole", img: "images/jcole.jpg", src: "songs/no_role_modelz.mp3" },
+    { title: "Money Trees", artist: "Kendrick Lamar", img: "images/kendrick.jpg", src: "songs/money_trees.mp3" },
+    { title: "God's Plan", artist: "Drake", img: "images/drake.jpg", src: "songs/gods_plan.mp3" }
+],
+
+   "Rock": [
+    { title: "That Wrong Turn", artist: "Metallica", img: "images/metallica.jpg", src: "songs/enter_sandman.mp3" },
+    { title: "Before The Dawn", artist: "Led Zeppelin", img: "images/led_zeppelin.jpg", src: "songs/stairway_to_heaven.mp3" },
+    { title: "Usok Asin", artist: "Pink Floyd", img: "images/pink_floyd.jpg", src: "songs/comfortably_numb.mp3" },
+    { title: "Bote Dyaryo", artist: "Queen", img: "images/queen.jpg", src: "songs/we_will_rock_you.mp3" },
+    { title: "Slash", artist: "Guns N' Roses", img: "images/gnr.jpg", src: "songs/sweet_child_o_mine.mp3" },
+    { title: "Thunderstruck", artist: "AC/DC", img: "images/acdc.jpg", src: "songs/thunderstruck.mp3" },
+    { title: "Smells Like Teen Spirit", artist: "Nirvana", img: "images/nirvana.jpg", src: "songs/smells_like_teen_spirit.mp3" },
+    { title: "Hotel California", artist: "Eagles", img: "images/eagles.jpg", src: "songs/hotel_california.mp3" },
+    { title: "Livin' on a Prayer", artist: "Bon Jovi", img: "images/bon_jovi.jpg", src: "songs/livin_on_a_prayer.mp3" },
+    { title: "Bohemian Rhapsody", artist: "Queen", img: "images/queen.jpg", src: "songs/bohemian_rhapsody.mp3" },
+    { title: "Back in Black", artist: "AC/DC", img: "images/acdc.jpg", src: "songs/back_in_black.mp3" },
+    { title: "Highway to Hell", artist: "AC/DC", img: "images/acdc.jpg", src: "songs/highway_to_hell.mp3" }
+],
+
+"Reggae": [
+    { title: "One Love", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/one_love.mp3" },
+    { title: "No Woman, No Cry", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/no_woman_no_cry.mp3" },
+    { title: "Could You Be Loved", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/could_you_be_loved.mp3" },
+    { title: "Red Red Wine", artist: "UB40", img: "images/ub40.jpg", src: "songs/red_red_wine.mp3" },
+    { title: "Bad Boys", artist: "Inner Circle", img: "images/inner_circle.jpg", src: "songs/bad_boys.mp3" },
+    { title: "Sweat (A La La La La Long)", artist: "Inner Circle", img: "images/inner_circle.jpg", src: "songs/sweat.mp3" },
+    { title: "Buffalo Soldier", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/buffalo_soldier.mp3" },
+    { title: "Welcome to Jamrock", artist: "Damian Marley", img: "images/damian_marley.jpg", src: "songs/welcome_to_jamrock.mp3" },
+    { title: "Boom Shakalaka", artist: "Apache Indian", img: "images/apache_indian.jpg", src: "songs/boom_shakalaka.mp3" },
+    { title: "Legalize It", artist: "Peter Tosh", img: "images/peter_tosh.jpg", src: "songs/legalize_it.mp3" },
+    { title: "Sweat", artist: "UB40", img: "images/ub40.jpg", src: "songs/sweat.mp3" },
+    { title: "I Shot the Sheriff", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/i_shot_the_sheriff.mp3" }
+],
+
+
     },
-    albums: [
+    "albums": [
         {
-            artist: "Taylor Swift",
+            artist: "Olivia Rodrigo",
             albumImg: "images/taylor_swift_album.jpg",
             songs: [
-                { title: "Love Story", img: "images/love_story.jpg", src: "songs/love_story.mp3" },
-                { title: "You Belong With Me", img: "images/you_belong_with_me.jpg", src: "songs/you_belong_with_me.mp3" }
+                
+                { title: "Love Is Embarrassing", artist: "Drake", img: "images/gods_plan.jpg", src: "songs/gods_plan.mp3" },
+                { title: "Vampire", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Good 4 U", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Bad Idea Right?", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Drive License", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Get Him Back", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Deja Vu", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Traitor", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Happier", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Brutal", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Favorite Crime", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Jealousy", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },   
             ]
         },
         {
-            artist: "Eminem",
+            artist: "Ben&Ben",
             albumImg: "images/eminem_album.jpg",
             songs: [
-                { title: "Lose Yourself", img: "images/lose_yourself.jpg", src: "songs/lose_yourself.mp3" },
-                { title: "Without Me", img: "images/without_me.jpg", src: "songs/without_me.mp3" }
+                { title: "Could Be Something", img: "images/lose_yourself.jpg", src: "songs/lose_yourself.mp3" },
+                { title: "Dear", img: "images/without_me.jpg", src: "songs/without_me.mp3" },
+                { title: "Fall", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Kasayaw", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Doors", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Pasalubong", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Upuan", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Kathang Isip", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Leaves", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Di ka sayang", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Pagtingin", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Araw-Araw", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
             ]
-        }
-    ]
+        },{
+            artist: "SB19",
+            albumImg: "images/taylor_swift_album.jpg",
+            songs: [
+                { title: "Dam", img: "images/love_story.jpg", src: "songs/love_story.mp3" },
+                { title: "Ginto", img: "images/you_belong_with_me.jpg", src: "songs/you_belong_with_me.mp3" },
+                { title: "Mapa", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Bazinga", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Mana", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "SLMT", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Go Up", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Ikako", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Freedom", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Alab", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "WYAT(Where You At)", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            ]
+        },
+        {
+            artist: "Syd Hartha",
+            albumImg: "images/eminem_album.jpg",
+            songs: [
+                { title: "Tila Tala", img: "images/lose_yourself.jpg", src: "songs/lose_yourself.mp3" },
+                { title: "Iglap", img: "images/without_me.jpg", src: "songs/without_me.mp3" },
+                { title: "Paru Paro", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Panalangin", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Ayaw", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Gabay", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Pakay", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Lipad", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Hiwaga", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Kung Nag-aatubili", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Oro", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Ayaw Mo Naba?", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            ]
+        },
+        {
+            artist: "Bruno Mars",
+            albumImg: "images/taylor_swift_album.jpg",
+            songs: [
+                { title: "Just The Way You Are", img: "images/love_story.jpg", src: "songs/love_story.mp3" },
+                { title: "Grenade", img: "images/you_belong_with_me.jpg", src: "songs/you_belong_with_me.mp3" },
+                { title: "Uptown Funk", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "When I Was Your Man", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "24k Magic", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Treasure", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Talking To The Moon", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Locked Out Of Heaven", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "That's What I Like", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Leave The Door Open", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Finesse", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Court On Me", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            ]
+        },
+        {
+            artist: "Lady Gaga",
+            albumImg: "images/eminem_album.jpg",
+            songs: [
+                { title: "Poker Face", img: "images/lose_yourself.jpg", src: "songs/lose_yourself.mp3" },
+                { title: "Bad Romance", img: "images/without_me.jpg", src: "songs/without_me.mp3" },
+                { title: "Born This Way", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Just Dance", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Shawllow", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Million Reasons", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Always Remember Us This Way", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Stupid Love", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Applause", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "The Edge Of Glory", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Rain On Me", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Judas", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            ]
+        },
+            {
+            artist: "Katy Perry",
+            albumImg: "images/taylor_swift_album.jpg",
+            songs: [
+                { title: "Roar", img: "images/love_story.jpg", src: "songs/love_story.mp3" },
+                { title: "Firework", img: "images/you_belong_with_me.jpg", src: "songs/you_belong_with_me.mp3" },
+                { title: "Dark Horse", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Teenage Dream", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Last Friday Night (T.G.I.F)", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "California Gurls", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "E.T", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Wide Awake", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "The One That Got Away", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Hot n Cold", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Part Of Me", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Never Really Over", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+            ]
+        },
+         {
+        artist: "Earth, Wind & Fire",
+        albumImg: "images/earth_wind_fire.jpg",
+        songs: [
+            { title: "September", img: "images/september.jpg", src: "songs/september.mp3" },
+            { title: "Boogie Wonderland", img: "images/boogie_wonderland.jpg", src: "songs/boogie_wonderland.mp3" },
+            { title: "Let's Groove", img: "images/lets_groove.jpg", src: "songs/lets_groove.mp3" },
+            { title: "Fantasy", img: "images/fantasy.jpg", src: "songs/fantasy.mp3" },
+            { title: "Shining Star", img: "images/shining_star.jpg", src: "songs/shining_star.mp3" },
+            { title: "Reasons", img: "images/reasons.jpg", src: "songs/reasons.mp3" },
+            { title: "After the Love Has Gone", img: "images/after_the_love.jpg", src: "songs/after_the_love.mp3" },
+            { title: "Sing a Song", img: "images/sing_a_song.jpg", src: "songs/sing_a_song.mp3" },
+            { title: "That's the Way of the World", img: "images/thats_the_way.jpg", src: "songs/thats_the_way.mp3" },
+            { title: "Serpentine Fire", img: "images/serpentine_fire.jpg", src: "songs/serpentine_fire.mp3" },
+            { title: "Got to Get You into My Life", img: "images/got_to_get_you.jpg", src: "songs/got_to_get_you.mp3" },
+            { title: "Mighty Mighty", img: "images/mighty_mighty.jpg", src: "songs/mighty_mighty.mp3" }
+        ]
+    },
+    {
+        artist: "Stephen Sanchez",
+        albumImg: "images/stephen_sanchez.jpg",
+        songs: [
+            { title: "Until I Found You", img: "images/until_i_found_you.jpg", src: "songs/until_i_found_you.mp3" },
+            { title: "Evangeline", img: "images/evangeline.jpg", src: "songs/evangeline.mp3" },
+            { title: "See The Light", img: "images/see_the_light.jpg", src: "songs/see_the_light.mp3" },
+            { title: "Only Girl", img: "images/only_girl.jpg", src: "songs/only_girl.mp3" },
+            { title: "High", img: "images/high.jpg", src: "songs/high.mp3" },
+            { title: "Lady By The Sea", img: "images/lady_by_the_sea.jpg", src: "songs/lady_by_the_sea.mp3" },
+            { title: "Shake", img: "images/shake.jpg", src: "songs/shake.mp3" },
+            { title: "Love Me", img: "images/love_me.jpg", src: "songs/love_me.mp3" },
+            { title: "Perfect Love", img: "images/perfect_love.jpg", src: "songs/perfect_love.mp3" },
+            { title: "Stay With Me", img: "images/stay_with_me.jpg", src: "songs/stay_with_me.mp3" },
+            { title: "Tell Me", img: "images/tell_me.jpg", src: "songs/tell_me.mp3" },
+            { title: "Golden", img: "images/golden.jpg", src: "songs/golden.mp3" }
+        ]
+    },
+    {
+        artist: "Coolio",
+        albumImg: "images/coolio.jpg",
+        songs: [
+            { title: "Gangsta's Paradise", img: "images/gangstas_paradise.jpg", src: "songs/gangstas_paradise.mp3" },
+            { title: "Fantastic Voyage", img: "images/fantastic_voyage.jpg", src: "songs/fantastic_voyage.mp3" },
+            { title: "1, 2, 3, 4", img: "images/1234.jpg", src: "songs/1234.mp3" },
+            { title: "Too Hot", img: "images/too_hot.jpg", src: "songs/too_hot.mp3" },
+            { title: "C U When U Get There", img: "images/cu_when_u_get_there.jpg", src: "songs/cu_when_u_get_there.mp3" },
+            { title: "The Winner", img: "images/the_winner.jpg", src: "songs/the_winner.mp3" },
+            { title: "Hit 'em High", img: "images/hit_em_high.jpg", src: "songs/hit_em_high.mp3" },
+            { title: "Ooh La La", img: "images/ooh_la_la.jpg", src: "songs/ooh_la_la.mp3" },
+            { title: "Nature of the Business", img: "images/nature_of_the_business.jpg", src: "songs/nature_of_the_business.mp3" },
+            { title: "One More Night", img: "images/one_more_night.jpg", src: "songs/one_more_night.mp3" },
+            { title: "Bright as the Sun", img: "images/bright_as_the_sun.jpg", src: "songs/bright_as_the_sun.mp3" },
+            { title: "Cruisin'", img: "images/cruisin.jpg", src: "songs/cruisin.mp3" },
+        ],
+       }
+        
+    ],
 };
