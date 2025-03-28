@@ -9,7 +9,7 @@ body {
 
 
 .sidebar {
-    width: 200px;
+    width: 180px;
     background: #222;
     color: white;
     padding: 20px;
@@ -42,8 +42,8 @@ body {
 
 main {
     flex-grow: 1;
-    padding: 20px;
-    margin-left: 270px; 
+    padding: 70px;
+    margin-left: 190px; 
 }
 
 
@@ -88,7 +88,7 @@ header {
 
 .song-card {
     background-color: #282828;
-    width: 180px;
+    width: 210px;
     height: 240px; 
     border-radius: 5px;
     position: relative;
@@ -119,7 +119,7 @@ header {
 }
 
 .song-card h3 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 2px;
     color: white;
