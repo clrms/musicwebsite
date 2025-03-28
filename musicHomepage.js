@@ -1,3 +1,4 @@
+
 const songsData = {
     quickPlay: 
            [{ title: "Sandalan", artist: "6cyclemind", src: "6cyclemind - Sandalan (Lyrics).mp3", bg: "2.png" },
@@ -148,14 +149,14 @@ const songsData = {
     { "title": "Walk on Water", "artist": "Eminem ft. Beyoncé", "img": "images/walk_on_water.jpg", "src": "songs/walk_on_water.mp3" },
     { "title": "As It Was", "artist": "Harry Styles", "img": "images/as_it_was.jpg", "src": "songs/as_it_was.mp3" },
     { "title": "Sicko Mode", "artist": "Travis Scott ft. Drake", "img": "images/sicko_mode.jpg", "src": "songs/sicko_mode.mp3" },
-    { "title": "God’s Plan", "artist": "Drake", "img": "images/gods_plan.jpg", "src": "songs/gods_plan.mp3" },
+    { "title": "God's Plan", "artist": "Drake", "img": "images/gods_plan.jpg", "src": "songs/gods_plan.mp3" },
     { "title": "Lose Yourself", "artist": "Eminem", "img": "images/lose_yourself.jpg", "src": "songs/lose_yourself.mp3" },
     { "title": "Numb/Encore", "artist": "Jay-Z & Linkin Park", "img": "images/numb_encore.jpg", "src": "songs/numb_encore.mp3" },
     { "title": "HUMBLE.", "artist": "Kendrick Lamar", "img": "images/humble.jpg", "src": "songs/humble.mp3" },
     { "title": "No Role Modelz", "artist": "J. Cole", "img": "images/no_role_modelz.jpg", "src": "songs/no_role_modelz.mp3" },
     { "title": "Juicy", "artist": "The Notorious B.I.G.", "img": "images/juicy.jpg", "src": "songs/juicy.mp3" },
 ],
-"Jazz": [
+Jazz: [
     { "title": "Fly Me To The Moon", "artist": "Frank Sinatra", "img": "images/fly_me_to_the_moon.jpg", "src": "songs/fly_me_to_the_moon.mp3" },
     { "title": "From The Start", "artist": "Laufey", "img": "images/from_the_start.jpg", "src": "songs/from_the_start.mp3" },
     { "title": "Dream A Little Dream Of Me", "artist": "Ella Fitzgerald", "img": "images/dream_a_little_dream.jpg", "src": "songs/dream_a_little_dream.mp3" },
@@ -168,7 +169,7 @@ const songsData = {
     { "title": "Cheek to Cheek", "artist": "Ella Fitzgerald & Louis Armstrong", "img": "images/cheek_to_cheek.jpg", "src": "songs/cheek_to_cheek.mp3" },
     { "title": "Blue in Green", "artist": "Miles Davis", "img": "images/blue_in_green.jpg", "src": "songs/blue_in_green.mp3" },
     { "title": "In A Sentimental Mood", "artist": "Duke Ellington & John Coltrane", "img": "images/in_a_sentimental_mood.jpg", "src": "songs/in_a_sentimental_mood.mp3" }
-]       
+],      
         "K-pop": [
     { "title": "Bang Bang Bang", "artist": "BIGBANG", "img": "images/bang_bang_bang.jpg", "src": "songs/bang_bang_bang.mp3" },
     { "title": "Love Shot", "artist": "EXO", "img": "images/love_shot.jpg", "src": "songs/love_shot.mp3" },
@@ -179,14 +180,14 @@ const songsData = {
  { "title": "Pink Venom", "artist": "BLACKPINK", "img": "images/pink_venom.jpg", "src": "songs/pink_venom.mp3" },
     { "title": "Dynamite", "artist": "BTS", "img": "images/dynamite.jpg", "src": "songs/dynamite.mp3" },
     { "title": "Hype Boy", "artist": "NewJeans", "img": "images/hype_boy.jpg", "src": "songs/hype_boy.mp3" },
-    { "title": "God’s Menu", "artist": "Stray Kids", "img": "images/gods_menu.jpg", "src": "songs/gods_menu.mp3" },
+    { "title": "God's Menu", "artist": "Stray Kids", "img": "images/gods_menu.jpg", "src": "songs/gods_menu.mp3" },
     { "title": "Feel Special", "artist": "TWICE", "img": "images/feel_special.jpg", "src": "songs/feel_special.mp3" },
     { "title": "Love Dive", "artist": "IVE", "img": "images/love_dive.jpg", "src": "songs/love_dive.mp3" },
     { "title": "Super", "artist": "SEVENTEEN", "img": "images/super.jpg", "src": "songs/super.mp3" },
 
-]
+],
 
-        "Old": [
+        Old: [
     { "title": "You Decorated My Life", "artist": "Kenny Rogers", "img": "images/you_decorated_my_life.jpg", "src": "songs/you_decorated_my_life.mp3" },
     { "title": "Against All Odds", "artist": "Phil Collins", "img": "images/against_all_odds.jpg", "src": "songs/against_all_odds.mp3" },
     { "title": "Somewhere Only We Know", "artist": "Keane", "img": "images/somewhere_only_we_know.jpg", "src": "songs/somewhere_only_we_know.mp3" },
@@ -199,7 +200,7 @@ const songsData = {
     { "title": "Ikaw Na Nga", "artist": "Willie Revillame", "img": "images/ikaw_na_nga.jpg", "src": "songs/ikaw_na_nga.mp3" },
      { "title": "Yesterday", "artist": "The Beatles", "img": "images/yesterday.jpg", "src": "songs/yesterday.mp3" },
     { "title": "Hotel California", "artist": "Eagles", "img": "images/hotel_california.jpg", "src": "songs/hotel_california.mp3" },
-]
+],
       "P-pop": [
     { "title": "Zero Pressure", "artist": "SB19", "img": "images/zero_pressure.jpg", "src": "songs/zero_pressure.mp3" },
     { "title": "DAM", "artist": "BINI", "img": "images/dam.jpg", "src": "songs/dam.mp3" },
@@ -214,9 +215,9 @@ const songsData = {
     { "title": "Pano", "artist": "Zack Tabudlo", "img": "images/pano.jpg", "src": "songs/pano.mp3" },
     { "title": "Paubaya", "artist": "Moira Dela Torre", "img": "images/paubaya.jpg", "src": "songs/paubaya.mp3" }
           
-]
+],
 
-        "Pop": [
+        Pop: [
     { "title": "Happy", "artist": "Pharrell Williams", "img": "images/happy.jpg", "src": "songs/happy.mp3" },
     { "title": "Funkytown", "artist": "Lipps Inc.", "img": "images/funkytown.jpg", "src": "songs/funkytown.mp3" },
     { "title": "Dancing Queen", "artist": "ABBA", "img": "images/dancing_queen.jpg", "src": "songs/dancing_queen.mp3" },
@@ -231,7 +232,7 @@ const songsData = {
     { "title": "Firework", "artist": "Katy Perry", "img": "images/firework.jpg", "src": "songs/firework.mp3" }
 
 ],
-        "Rap": [
+        Rap: [
     { title: "Fly Baby", artist: "Queen", img: "images/bohemian_rhapsody.jpg", src: "songs/bohemian_rhapsody.mp3" }, 
     { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
     { title: "Puff Me Up", artist: "Eminem", img: "images/eminem.jpg", src: "songs/lose_yourself.mp3" },
@@ -458,7 +459,43 @@ const songsData = {
             { title: "Bright as the Sun", img: "images/bright_as_the_sun.jpg", src: "songs/bright_as_the_sun.mp3" },
             { title: "Cruisin'", img: "images/cruisin.jpg", src: "songs/cruisin.mp3" },
         ],
-       }
-        
-    ],
+       },
+        {
+            artist: "Eminem",
+            albumImg: "images/eminem.jpg",
+            songs: [
+                { title: "Lose Yourself", img: "images/lose_yourself.jpg", src: "songs/lose_yourself.mp3" },
+                { title: "Stan", img: "images/stan.jpg", src: "songs/stan.mp3" },
+                { title: "Without Me", img: "images/without_me.jpg", src: "songs/without_me.mp3" },
+                { title: "Rap God", img: "images/rap_god.jpg", src: "songs/rap_god.mp3" },
+                { title: "The Real Slim Shady", img: "images/real_slim_shady.jpg", src: "songs/real_slim_shady.mp3" },
+                { title: "Mockingbird", img: "images/mockingbird.jpg", src: "songs/mockingbird.mp3" },
+                { title: "Not Afraid", img: "images/not_afraid.jpg", src: "songs/not_afraid.mp3" },
+                { title: "Godzilla", img: "images/godzilla.jpg", src: "songs/godzilla.mp3" },
+                { title: "Love the Way You Lie", img: "images/love_the_way_you_lie.jpg", src: "songs/love_the_way_you_lie.mp3" },
+                { title: "Till I Collapse", img: "images/till_i_collapse.jpg", src: "songs/till_i_collapse.mp3" },
+                { title: "Venom", img: "images/venom.jpg", src: "songs/venom.mp3" },
+                { title: "Beautiful", img: "images/beautiful.jpg", src: "songs/beautiful.mp3" },
+            ],
+        },
+        {
+            artist: "Ice Cube",
+            albumImg: "images/ice_cube.jpg",
+            songs: [
+                { title: "It Was a Good Day", img: "images/good_day.jpg", src: "songs/good_day.mp3" },
+                { title: "Check Yo Self", img: "images/check_yo_self.jpg", src: "songs/check_yo_self.mp3" },
+                { title: "No Vaseline", img: "images/no_vaseline.jpg", src: "songs/no_vaseline.mp3" },
+                { title: "You Know How We Do It", img: "images/you_know.jpg", src: "songs/you_know.mp3" },
+                { title: "Gangsta Rap Made Me Do It", img: "images/gangsta_rap.jpg", src: "songs/gangsta_rap.mp3" },
+                { title: "Why We Thugs", img: "images/why_we_thugs.jpg", src: "songs/why_we_thugs.mp3" },
+                { title: "Go to Church", img: "images/go_to_church.jpg", src: "songs/go_to_church.mp3" },
+                { title: "Bop Gun", img: "images/bop_gun.jpg", src: "songs/bop_gun.mp3" },
+                { title: "Pushin' Weight", img: "images/pushin_weight.jpg", src: "songs/pushin_weight.mp3" },
+                { title: "Today Was a Good Day", img: "images/today_good_day.jpg", src: "songs/today_good_day.mp3" },
+                { title: "Steady Mobbin'", img: "images/steady_mobbin.jpg", src: "songs/steady_mobbin.mp3" },
+                { title: "Natural Born Killaz", img: "images/natural_born_killaz.jpg", src: "songs/natural_born_killaz.mp3" },
+            ],
+        }
+    ]
+    
 };
