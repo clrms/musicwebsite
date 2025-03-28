@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- Sidebar -->
     <aside class="sidebar">
         <ul>
             <li><a href="#" id="homeBtn">Home</a></li>
@@ -17,18 +18,26 @@
         </ul>
     </aside>
 
-   
+    <!-- Main Content -->
     <main id="mainContent">
         <header>
-            <h1 id="pageTitle">Quick Play</h1>
+            <h1 id="pageTitle">Home</h1>
             <div class="category-buttons">
                 <select id="genreSelect">
                     <option value="">All Genre</option>
-                    <option value="Rock">Rock</option>
-                    <option value="Pop">Pop</option>
-                    <option value="HipHop">Hip-Hop</option>
-                    <option value="Jazz">Jazz</option>
                     <option value="Disco">Disco</option>
+                    <option value="Electronic">Electronic</option>
+                    <option value="Folk">Folk</option>
+                    <option value="Funk">Funk</option>
+                    <option value="HipHop">HipHop</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="K-pop">K-pop</option>
+                    <option value="Old">Old</option>
+                    <option value="P-pop">P-pop</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Rap">Rap</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Reggae">Reggae</option>
                 </select>
                 <button class="category-btn" id="favoriteBtn">Favorite</button>
                 <button class="category-btn" id="mostLikedBtn">Most Liked</button>
@@ -36,7 +45,7 @@
             </div>
         </header>
 
-        
+        <!-- Home Sections -->
         <section id="quickPlay" class="song-section">
             <h2>Quick Play</h2>
             <div class="song-list" id="quickPlaySongs"></div>
@@ -52,25 +61,22 @@
             <div class="song-list" id="recommendedSongsList"></div>
         </section>
 
-     
+        <!-- New Pages for Categories & Sections -->
         <section id="categoryPage" class="hidden">
             <h2 id="categoryTitle"></h2>
             <div class="song-list" id="categorySongs"></div>
         </section>
 
         <section id="explorePage" class="hidden">
-            <h2>Explore</h2>
             <div class="song-list" id="exploreSongs"></div>
         </section>
 
         <section id="samplesPage" class="hidden">
-            <h2>Samples</h2>
             <div class="video-list" id="sampleVideos"></div>
         </section>
 
         <section id="albumPage" class="hidden">
-            <h2>Albums</h2>
-            <div class="album-list" id="albumArtists"></div> 
+            <div class="album-list" id="albumArtists"></div>  <!-- ✅ Correct ID -->
         </section>  
         
 
@@ -79,7 +85,7 @@
             <div class="song-list" id="albumSongs"></div>
         </section>
 
-       
+        <!-- Music Player -->
         <div id="musicPlayer">
             <img id="playerImg" src="" alt="Song Image">
             <div id="playerDetails">
