@@ -1,11 +1,11 @@
 
 const songsData = {
     quickPlay: 
-           [{ title: "Sandalan", artist: "6cyclemind", src: "6cyclemind - Sandalan (Lyrics).mp3", bg: "2.png" },
-            { title: "Fly Me To The Moon", artist: "Frank Sinatra", src: "Fly Me To The Moon (2008 Remastered).mp3", bg: "46.jpg" },
-            { title: "Freaky Friday", artist: "Lil Dicky", src: "Lil Dicky - Freaky Friday (Lyrics) ft. Chris Brown.mp3", bg: "8.jpg" },
-            { title: "Sun Flower", artist: "Post Malone", src: "Post Malone - Sunflower (Lyrics) ft. Swae Lee.mp3", bg: "9.jpg" },
-            { title: "Bye Bye Bye", artist: "NSYNC", src: "NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack).mp3", bg: "15.jpg" },
+           [{ title: "Sandalan", artist: "6cyclemind", src: "6cyclemind - Sandalan (Lyrics).mp3", img: "2.png" },
+            { title: "Fly Me To The Moon", artist: "Frank Sinatra", src: "Fly Me To The Moon (2008 Remastered).mp3", img: "46.jpg" },
+            { title: "Freaky Friday", artist: "Lil Dicky", src: "Lil Dicky - Freaky Friday (Lyrics) ft. Chris Brown.mp3", img: "8.jpg" },
+            { title: "Sun Flower", artist: "Post Malone", src: "Post Malone - Sunflower (Lyrics) ft. Swae Lee.mp3", img: "9.jpg" },
+            { title: "Bye Bye Bye", artist: "NSYNC", src: "NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack).mp3", img: "15.jpg" },
             { title: "Bote at Dyaryo", artist: "Abrakdabra", src: "Bote_t Dyaryo.mp3", bg: "4.jpg" },
 
     ],
