@@ -86,31 +86,24 @@
             <div class="song-list" id="albumSongs"></div>
         </section>
 
-        <!-- Music Player -->
+         <img class="room-background" id="roomBackground" src="" alt="Background">
+
         <div id="musicPlayer">
             <img id="playerImg" src="default-cover.jpg" alt="Album Cover">
-            <div class="player-controls">
-                <div class="song-info">
-                    <div id="songTitle" class="song-title">No Song Playing</div>
-                    <div id="songArtist" class="song-artist">—</div>
-                </div>
-                
-                <div class="combined-controls">
-                    <div class="playback-buttons">
-                        <button id="prevBtn" class="prev">⏮</button>
-                        <button id="playPauseBtn" class="play-pause">⏯</button>
-                        <button id="nextBtn" class="next">⏭</button>
-                    </div>
-                    
-                    <div class="volume-control">
-                        <i class="volume-icon">🔊</i>
-                        <input id="volumeSlider" type="range" class="volume-slider" min="0" max="100" value="70">
-                    </div>
-                </div>
-                
-                <div class="progress-container">
-                    <div class="progress-bar"></div>
-                </div>
+            
+            <div class="song-info">
+                <div id="songTitle">No Song Playing</div>
+                <div id="songArtist">—</div>
+            </div>
+    
+            <div class="controls-container">
+                <button id="prevBtn" class="player-btn">⏮</button>
+                <button id="playPauseBtn" class="player-btn">⏯</button>
+                <button id="nextBtn" class="player-btn">⏭</button>
+        
+            </div>
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
             </div>
         </div>
     </main>
