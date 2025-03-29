@@ -225,7 +225,7 @@ const songsData = {
          { "title": "Bye Bye Bye", "artist": "*NSYNC", "img": "images/bye_bye_bye.jpg", "src": "songs/bye_bye_bye.mp3" },
          { "title": "Uptown Funk", "artist": "Mark Ronson ft. Bruno Mars", "img": "images/uptown_funk.jpg", "src": "songs/uptown_funk.mp3" },
          { "title": "Can't Stop The Feeling!", "artist": "Justin Timberlake", "img": "images/cant_stop_the_feeling.jpg", "src": "songs/cant_stop_the_feeling.mp3" },
-         { "title": "Blinding Lights", "artist": "The Weeknd", "img": "images/blinding_lights.jpg", "src": "songs/blinding_lights.mp3" },
+         { "title": "Blinding Lights", "artist": "The Weekend", "img": "images/blinding_lights.jpg", "src": "songs/blinding_lights.mp3" },
          { "title": "Rolling In The Deep", "artist": "Adele", "img": "images/rolling_in_the_deep.jpg", "src": "songs/rolling_in_the_deep.mp3" },
          { "title": "Bad Romance", "artist": "Lady Gaga", "img": "images/bad_romance.jpg", "src": "songs/bad_romance.mp3" },
          { "title": "Shake It Off", "artist": "Taylor Swift", "img": "images/shake_it_off.jpg", "src": "songs/shake_it_off.mp3" },
