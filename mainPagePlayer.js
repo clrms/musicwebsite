@@ -1,81 +1,103 @@
-// Audio player setup
-const audioPlayer = new Audio();
-let currentPlaylist = [];
-let currentSongIndex = 0;
+  // Audio setup
+  const audioPlayer = new Audio();
+  let currentPlaylist = [];
+  let currentSongIndex = 0;
+  let isZoomed = false;
 
-// DOM elements
-const playerImg = document.getElementById('playerImg');
-const songTitle = document.getElementById('songTitle');
-const songArtist = document.getElementById('songArtist');
-const playPauseBtn = document.getElementById('playPauseBtn');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const volumeSlider = document.getElementById('volumeSlider');
-const progressBar = document.querySelector('.progress-bar');
+  // DOM elements
+  const elements = {
+      musicPlayer: document.getElementById('musicPlayer'),
+      playerImg: document.getElementById('playerImg'),
+      roomBackground: document.getElementById('roomBackground'),
+      songTitle: document.getElementById('songTitle'),
+      songArtist: document.getElementById('songArtist'),
+      playPauseBtn: document.getElementById('playPauseBtn'),
+      prevBtn: document.getElementById('prevBtn'),
+      nextBtn: document.getElementById('nextBtn'),
+      progressBar: document.getElementById('progressBar'),
+      progressContainer: document.getElementById('progressContainer')
+  };
 
-// Enhanced play song function
-function playSong(song, playlist, index) {
-    currentPlaylist = playlist || currentPlaylist;
-    currentSongIndex = index || 0;
-    
-    // Update player UI
-    playerImg.src = song.img || 'default-cover.jpg';
-    songTitle.textContent = song.title;
-    songArtist.textContent = song.artist;
-    
-    // Set audio source
-    audioPlayer.src = song.src;
-    audioPlayer.play()
-        .then(() => {
-            playPauseBtn.textContent = '⏸';
-        })
-        .catch(error => {
-            console.error('Playback failed:', error);
-        });
-}
+  // Play song function
+  function playSong(song, playlist, index) {
+      if (!song) return;
 
-// Player controls
-playPauseBtn.addEventListener('click', () => {
-    if (audioPlayer.paused) {
-        audioPlayer.play();
-        playPauseBtn.textContent = '⏸';
-    } else {
-        audioPlayer.pause();
-        playPauseBtn.textContent = '⏯';
-    }
-});
+      currentPlaylist = playlist || currentPlaylist;
+      currentSongIndex = index || 0;
 
-prevBtn.addEventListener('click', () => {
-    if (currentPlaylist.length > 0) {
-        currentSongIndex = (currentSongIndex - 1 + currentPlaylist.length) % currentPlaylist.length;
-        playSong(currentPlaylist[currentSongIndex]);
-    }
-});
+      elements.playerImg.src = song.img || 'default-cover.jpg';
+      elements.roomBackground.src = song.img || 'default-cover.jpg';
+      elements.songTitle.textContent = song.title;
+      elements.songArtist.textContent = song.artist || 'Unknown Artist';
 
-nextBtn.addEventListener('click', () => {
-    if (currentPlaylist.length > 0) {
-        currentSongIndex = (currentSongIndex + 1) % currentPlaylist.length;
-        playSong(currentPlaylist[currentSongIndex]);
-    }
-});
+      audioPlayer.src = song.src;
+      audioPlayer.play()
+          .then(() => {
+              elements.playPauseBtn.textContent = '⏸';
+          })
+          .catch(error => {
+              console.error('Playback failed:', error);
+          });
+  }
 
-// Volume control
-volumeSlider.addEventListener('input', () => {
-    audioPlayer.volume = volumeSlider.value / 100;
-});
+  // Toggle zoom
+  function toggleZoom() {
+      isZoomed = !isZoomed;
+      elements.musicPlayer.classList.toggle('zoomed', isZoomed);
+  }
 
-// Initialize volume
-audioPlayer.volume = volumeSlider.value / 100;
+  // Player controls
+  function togglePlayPause() {
+      if (audioPlayer.paused) {
+          audioPlayer.play();
+          elements.playPauseBtn.textContent = '⏸';
+      } else {
+          audioPlayer.pause();
+          elements.playPauseBtn.textContent = '⏯';
+      }
+  }
 
-// Progress bar update
-audioPlayer.addEventListener('timeupdate', () => {
-    if (audioPlayer.duration) {
-        const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
-        progressBar.style.width = `${progress}%`;
-    }
-});
+  function playPrevious() {
+      if (currentPlaylist.length === 0) return;
+      currentSongIndex = (currentSongIndex - 1 + currentPlaylist.length) % currentPlaylist.length;
+      playSong(currentPlaylist[currentSongIndex]);
+  }
 
-// When song ends
-audioPlayer.addEventListener('ended', () => {
-    nextBtn.click();
-});
+  function playNext() {
+      if (currentPlaylist.length === 0) return;
+      currentSongIndex = (currentSongIndex + 1) % currentPlaylist.length;
+      playSong(currentPlaylist[currentSongIndex]);
+  }
+
+  // Progress bar
+  elements.progressContainer.addEventListener('click', (e) => {
+      if (!audioPlayer.duration) return;
+      const percent = e.offsetX / elements.progressContainer.clientWidth;
+      audioPlayer.currentTime = percent * audioPlayer.duration;
+  });
+
+  // Time update
+  audioPlayer.addEventListener('timeupdate', () => {
+      if (audioPlayer.duration) {
+          const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+          elements.progressBar.style.width = `${progress}%`;
+      }
+  });
+
+  // Song ended
+  audioPlayer.addEventListener('ended', playNext);
+
+  // Event listeners
+  elements.playerImg.addEventListener('click', toggleZoom);
+  elements.playPauseBtn.addEventListener('click', togglePlayPause);
+  elements.prevBtn.addEventListener('click', playPrevious);
+  elements.nextBtn.addEventListener('click', playNext);
+
+  // Test with sample song
+  const testSong = {
+      title: "Example Song",
+      artist: "Sample Artist",
+      img: "https://via.placeholder.com/300",
+      src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+  };
+  playSong(testSong, [testSong], 0);
