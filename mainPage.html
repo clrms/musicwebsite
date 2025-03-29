@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
-    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="tyle.css">
 </head>
 <body>
 
@@ -72,7 +72,8 @@
         </section>
 
         <section id="samplesPage" class="hidden">
-            <div class="video-list" id="sampleVideos"></div>
+            <div class="video-list" id="sampleVideos"></div> 
+            <!-- Changed from song-list to video-list for clarity -->
         </section>
 
         <section id="albumPage" class="hidden">
@@ -87,16 +88,35 @@
 
         <!-- Music Player -->
         <div id="musicPlayer">
-            <img id="playerImg" src="" alt="Song Image">
-            <div id="playerDetails">
-                <h2 id="playerTitle">Title</h2>
-                <p id="playerArtist">Artist</p>
+            <img id="playerImg" src="default-cover.jpg" alt="Album Cover">
+            <div class="player-controls">
+                <div class="song-info">
+                    <div id="songTitle" class="song-title">No Song Playing</div>
+                    <div id="songArtist" class="song-artist">—</div>
+                </div>
+                
+                <div class="combined-controls">
+                    <div class="playback-buttons">
+                        <button id="prevBtn" class="prev">⏮</button>
+                        <button id="playPauseBtn" class="play-pause">⏯</button>
+                        <button id="nextBtn" class="next">⏭</button>
+                    </div>
+                    
+                    <div class="volume-control">
+                        <i class="volume-icon">🔊</i>
+                        <input id="volumeSlider" type="range" class="volume-slider" min="0" max="100" value="70">
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
             </div>
-            <audio id="audioPlayer" controls></audio>
         </div>
     </main>
 
     <script src="mainPage.js"></script>
     <script src="musicHomepage.js"></script>
+    <script src="mainPagePlayer.js"></script>
 </body>
 </html>
