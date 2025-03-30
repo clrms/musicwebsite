@@ -87,7 +87,7 @@ header {
     padding: 10px;
 }
 
-/* Song Card Design */
+/* Song Card Design - Added gradient here */
 .song-card {
     background-color: #282828;
     width: 210px;
@@ -104,6 +104,18 @@ header {
     text-align: center;
 }
 
+.song-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background: linear-gradient(to top, rgba(15, 15, 15, 0.7), transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+
 .song-card:hover {
     transform: scale(1.05);
 }
@@ -116,6 +128,7 @@ header {
     top: 0;
     left: 0;
     border-radius: 5px;
+    z-index: 0;
 }
 
 .song-info {
@@ -123,8 +136,9 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
+    padding: 15px;
     color: white;
+    z-index: 2;
 }
 
 .song-info h3 {
@@ -149,25 +163,39 @@ header {
     justify-content: flex-start;
 }
 
-/* Album Songs Page */
+/* Album Songs Page - Fixed text visibility */
 #albumSongs .song-card {
     position: relative;
+}
+
+#albumSongs .song-card::after {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    z-index: 1; 
+}
+
+#albumSongs .song-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    z-index: 2;
 }
 
 #albumSongs .song-card p, 
 #albumSongs .song-card h3 {
     background: none !important;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    padding: 5px 10px;
-    margin: 0;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    padding: 0;
     z-index: 2;
+    opacity: 1 !important
 }
 
 #albumSongs .song-card img {
@@ -177,7 +205,31 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 5px;
+    z-index: 0;
 }
+
+/* Scrollable Sections */
+.scrollable {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+/* Hide Sections */
+.hidden {
+    display: none;
+}
+
+/* Video Cards */
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+}
+
+/* [Continue with all your existing player and zoomed styles...] */
 
 /* Scrollable Sections */
 .scrollable {
@@ -525,10 +577,10 @@ header {
             height: 100%;
             object-fit: cover;
             z-index: -1;
-            opacity: 0;
-            transition: opacity 0.5s;
+            opacity: 0.100;
+            transition: opacity 100s;
         }
 
         #musicPlayer.zoomed .room-background {
-            opacity: 0.3;
+            opacity: 100;
         }
