@@ -201,22 +201,7 @@ const songsData = {
          { "title": "Yesterday", "artist": "The Beatles", "img": "images/yesterday.jpg", "src": "songs/yesterday.mp3" },
          { "title": "Hotel California", "artist": "Eagles", "img": "images/hotel_california.jpg", "src": "songs/hotel_california.mp3" },
 ],
-    "P-pop": [
-         { "title": "Zero Pressure", "artist": "SB19", "img": "images/zero_pressure.jpg", "src": "songs/zero_pressure.mp3" },
-         { "title": "DAM", "artist": "BINI", "img": "images/dam.jpg", "src": "songs/dam.mp3" },
-         { "title": "Daleng Dale", "artist": "MNL48", "img": "images/daleng_dale.jpg", "src": "songs/daleng_dale.mp3" },
-         { "title": "Kalakal", "artist": "Alamat", "img": "images/kalakal.jpg", "src": "songs/kalakal.mp3" },
-         { "title": "Cherry On Top", "artist": "VXON", "img": "images/cherry_on_top.jpg", "src": "songs/cherry_on_top.mp3" },
-         { "title": "Gento", "artist": "SB19", "img": "images/gento.jpg", "src": "songs/gento.mp3" },
-         { "title": "Da Coconut Nut", "artist": "BINI", "img": "images/da_coconut_nut.jpg", "src": "songs/da_coconut_nut.mp3" },
-         { "title": "Asa Naman", "artist": "Alamat", "img": "images/asa_naman.jpg", "src": "songs/asa_naman.mp3" },
-         { "title": "Ikaw At Ako", "artist": "MNL48", "img": "images/ikaw_at_ako.jpg", "src": "songs/ikaw_at_ako.mp3" },
-         { "title": "Bang!", "artist": "VXON", "img": "images/bang.jpg", "src": "songs/bang.mp3" },
-         { "title": "Pano", "artist": "Zack Tabudlo", "img": "images/pano.jpg", "src": "songs/pano.mp3" },
-         { "title": "Paubaya", "artist": "Moira Dela Torre", "img": "images/paubaya.jpg", "src": "songs/paubaya.mp3" }
-          
-],
-
+  
       Pop: [
          { "title": "Happy", "artist": "Pharrell Williams", "img": "images/happy.jpg", "src": "songs/happy.mp3" },
          { "title": "Funkytown", "artist": "Lipps Inc.", "img": "images/funkytown.jpg", "src": "songs/funkytown.mp3" },
@@ -262,21 +247,6 @@ const songsData = {
         { title: "Highway to Hell", artist: "AC/DC", img: "images/acdc.jpg", src: "songs/highway_to_hell.mp3" }
 ],
 
-"Reggae": [
-        { title: "One Love", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/one_love.mp3" },
-        { title: "No Woman, No Cry", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/no_woman_no_cry.mp3" },
-        { title: "Could You Be Loved", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/could_you_be_loved.mp3" },
-        { title: "Red Red Wine", artist: "UB40", img: "images/ub40.jpg", src: "songs/red_red_wine.mp3" },
-        { title: "Bad Boys", artist: "Inner Circle", img: "images/inner_circle.jpg", src: "songs/bad_boys.mp3" },
-        { title: "Sweat (A La La La La Long)", artist: "Inner Circle", img: "images/inner_circle.jpg", src: "songs/sweat.mp3" },
-        { title: "Buffalo Soldier", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/buffalo_soldier.mp3" },
-        { title: "Welcome to Jamrock", artist: "Damian Marley", img: "images/damian_marley.jpg", src: "songs/welcome_to_jamrock.mp3" },
-        { title: "Boom Shakalaka", artist: "Apache Indian", img: "images/apache_indian.jpg", src: "songs/boom_shakalaka.mp3" },
-        { title: "Legalize It", artist: "Peter Tosh", img: "images/peter_tosh.jpg", src: "songs/legalize_it.mp3" },
-        { title: "Sweat", artist: "UB40", img: "images/ub40.jpg", src: "songs/sweat.mp3" },
-        { title: "I Shot the Sheriff", artist: "Bob Marley", img: "images/bob_marley.jpg", src: "songs/i_shot_the_sheriff.mp3" }
-],
-
 
     },
     "albums": [
@@ -300,7 +270,7 @@ const songsData = {
             ]
         },
         {
-            artist: "Ben&Ben",
+            artist: "Ben & Ben",
             albumImg: "images/eminem_album.jpg",
             songs: [
                 { title: "Could Be Something", img: "images/lose_yourself.jpg", src: "songs/lose_yourself.mp3" },
@@ -321,7 +291,7 @@ const songsData = {
             albumImg: "images/taylor_swift_album.jpg",
             songs: [
                 { title: "Dam", img: "images/love_story.jpg", src: "songs/love_story.mp3" },
-                { title: "Ginto", img: "images/you_belong_with_me.jpg", src: "songs/you_belong_with_me.mp3" },
+                { title: "Gento", img: "images/you_belong_with_me.jpg", src: "songs/you_belong_with_me.mp3" },
                 { title: "Mapa", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Bazinga", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Mana", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
@@ -331,7 +301,7 @@ const songsData = {
                 { title: "Freedom", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Alab", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
                 { title: "WYAT(Where You At)", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
-                { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+                { title: "What", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
             ]
         },
         {
@@ -438,8 +408,8 @@ const songsData = {
             { title: "Love Me", img: "images/love_me.jpg", src: "songs/love_me.mp3" },
             { title: "Perfect Love", img: "images/perfect_love.jpg", src: "songs/perfect_love.mp3" },
             { title: "Stay With Me", img: "images/stay_with_me.jpg", src: "songs/stay_with_me.mp3" },
-            { title: "Tell Me", img: "images/tell_me.jpg", src: "songs/tell_me.mp3" },
-            { title: "Golden", img: "images/golden.jpg", src: "songs/golden.mp3" }
+            { title: "Be More", img: "images/tell_me.jpg", src: "songs/tell_me.mp3" },
+            { title: "The Thing Called Love", img: "images/golden.jpg", src: "songs/golden.mp3" }
         ]
     },
     {
