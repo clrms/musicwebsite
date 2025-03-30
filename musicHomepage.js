@@ -199,7 +199,7 @@ const songsData = {
          { "title": "Narda", "artist": "Kamikazee", "img": "29.jpg", "src": "songs/narda.mp3" },
          { "title": "Ikaw Na Nga", "artist": "Willie Revillame", "img": "30.jpg", "src": "songs/ikaw_na_nga.mp3" },
          { "title": "Yesterday", "artist": "The Beatles", "img": "406.jpg", "src": "songs/yesterday.mp3" },
-         { "title": "Hotel California", "artist": "Eagles", "img": "407.jpg", "src": "songs/hotel_california.mp3" },
+         { "title": "Hotel California", "artist": "Eagles", "img": "407.png", "src": "songs/hotel_california.mp3" },
 ],
   
       Pop: [
