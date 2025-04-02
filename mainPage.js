@@ -145,6 +145,11 @@ document.addEventListener("DOMContentLoaded", function () {
         loadAlbums();
     });
 
+document.getElementById("aboutBtn").addEventListener("click", function() {
+        showPage("aboutPage", "AboutUs");
+        loadAlbums();
+    });
+
     // Genre & Categories Navigation
     document.getElementById("genreSelect").addEventListener("change", function() {
         if (this.value) {
