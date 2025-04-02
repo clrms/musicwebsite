@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const homeSections = ["quickPlay", "mixedPlayer", "recommendedSongs"];
-    const pages = ["categoryPage", "explorePage", "samplesPage", "albumPage", "albumSongsPage", "aboutUs"]; 
+    const pages = ["categoryPage", "explorePage", "samplesPage", "albumPage", "albumSongsPage"];
     const pageTitle = document.getElementById("pageTitle");
 
     document.getElementById("samplesBtn").addEventListener("click", function() {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadSongs(sectionId, songsArray) {
         const section = document.getElementById(sectionId);
         section.innerHTML = "";
-        
+
         songsArray.forEach((song, index) => {
             const songCard = document.createElement("div");
             songCard.classList.add("song-card");
@@ -39,12 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p>${song.artist}</p>
                 </div>
             `;
-            
+
             // Updated click handler with playlist support
             songCard.addEventListener("click", () => {
                 playSong(song, songsArray, index);
             });
-            
+
             section.appendChild(songCard);
         });
     }
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadAlbums() {
         const albumSection = document.getElementById("albumArtists");
         albumSection.innerHTML = "";
-        
+
         songsData.albums.forEach(album => {
             const albumCard = document.createElement("div");
             albumCard.classList.add("song-card");
@@ -60,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img src="${album.albumImg}">
                 <p>${album.artist}</p>
             `;
-            
+
             albumCard.addEventListener("click", () => {
                 showAlbumSongs(album);
             });
-            
+
             albumSection.appendChild(albumCard);
         });
     }
@@ -72,11 +72,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function loadSampleVideos() {
         const section = document.getElementById("sampleVideos");
         section.innerHTML = "";
-        
+
         songsData.samples.forEach(video => {
             const videoCard = document.createElement("div");
             videoCard.classList.add("video-card");
-            
+
             videoCard.innerHTML = `
                 <div class="video-thumbnail">
                     <img src="${video.thumbnail || 'default-thumb.jpg'}">
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <source src="${video.src}" type="video/mp4">
                 </video>
             `;
-            
+
             // Optional: Auto-play on hover
             const videoElement = videoCard.querySelector("video");
             videoElement.addEventListener("mouseenter", function() {
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 this.pause();
                 this.currentTime = 0;
             });
-            
+
             section.appendChild(videoCard);
         });
     }
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function showAlbumSongs(album) {
         const albumSongsSection = document.getElementById("albumSongs");
         albumSongsSection.innerHTML = "";
-        
+
         album.songs.forEach((song, index) => {
             const songCard = document.createElement("div");
             songCard.classList.add("song-card");
@@ -118,15 +118,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h3>${song.title}</h3>
                 </div>
             `;
-            
+
             // Updated click handler with playlist support
             songCard.addEventListener("click", () => {
                 playSong(song, album.songs, index);
             });
-            
+
             albumSongsSection.appendChild(songCard);
         });
-        
+
         showPage("albumSongsPage", album.artist);
     }
 
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
         showPage("albumPage", "Albums");
         loadAlbums();
     });
-    
+
     // Genre & Categories Navigation
     document.getElementById("genreSelect").addEventListener("change", function() {
         if (this.value) {
