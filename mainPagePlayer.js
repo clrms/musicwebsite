@@ -94,10 +94,5 @@
   elements.nextBtn.addEventListener('click', playNext);
 
   // Test with sample song
-  const testSong = {
-      title: "Example Song",
-      artist: "Sample Artist",
-      img: "https://via.placeholder.com/300",
-      src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-  };
+
   playSong(testSong, [testSong], 0);
