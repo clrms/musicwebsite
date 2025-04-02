@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const homeSections = ["quickPlay", "mixedPlayer", "recommendedSongs"];
-    const pages = ["categoryPage", "explorePage", "samplesPage", "albumPage", "albumSongsPage"];
+    const pages = ["categoryPage", "explorePage", "samplesPage", "albumPage", "albumSongsPage", "aboutUs];
     const pageTitle = document.getElementById("pageTitle");
 
     document.getElementById("samplesBtn").addEventListener("click", function() {
