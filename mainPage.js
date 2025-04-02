@@ -49,6 +49,30 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    function loadAboutUs(sectionId, songsArray) {
+        const section = document.getElementById(sectionId);
+        section.innerHTML = "";
+        
+        songsArray.forEach((song, index) => {
+            const songCard = document.createElement("div");
+            songCard.classList.add("song-card");
+            songCard.innerHTML = `
+                <img src="${song.img}">
+                <div class="song-info">
+                    <h3>${song.title}</h3>
+                    <p>${song.artist}</p>
+                </div>
+            `;
+            
+            // Updated click handler with playlist support
+            songCard.addEventListener("click", () => {
+                playSong(song, songsArray, index);
+            });
+            
+            section.appendChild(songCard);
+        });
+    }
+
     function loadAlbums() {
         const albumSection = document.getElementById("albumArtists");
         albumSection.innerHTML = "";
@@ -143,6 +167,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("albumBtn").addEventListener("click", function() {
         showPage("albumPage", "Albums");
         loadAlbums();
+    });
+     document.getElementById("aboutUsBtn").addEventListener("click", function() {
+        showPage("aboutUs", "About Us");
+        loadAboutUs();
     });
 
     // Genre & Categories Navigation
