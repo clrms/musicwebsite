@@ -235,7 +235,7 @@ const songsData = {
         { title: "That Wrong Turn", artist: "Metallica", img: "1.png", src: "songs/enter_sandman.mp3" },
         { title: "Before The Dawn", artist: "Led Zeppelin", img: "2.png", src: "songs/stairway_to_heaven.mp3" },
         { title: "Usok Asin", artist: "Pink Floyd", img: "3.png", src: "songs/comfortably_numb.mp3" },
-        { title: "Bote Dyaryo", artist: "Queen", img: "4.png", src: "songs/we_will_rock_you.mp3" },
+        { title: "Bote Dyaryo", artist: "Queen", img: "4.jpg", src: "songs/we_will_rock_you.mp3" },
         { title: "Slash", artist: "Guns N' Roses", img: "5.jpg", src: "songs/sweet_child_o_mine.mp3" },
         { title: "Thunderstruck", artist: "AC/DC", img: "405.jpg", src: "songs/thunderstruck.mp3" },
         { title: "Smells Like Teen Spirit", artist: "Nirvana", img: "169.jpg", src: "songs/smells_like_teen_spirit.mp3" },
