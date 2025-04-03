@@ -155,7 +155,7 @@ const songsData = {
           { title: "Juicy", artist: "The Notorious B.I.G.", img: "135.jpeg", src: "songs/juicy.mp3" },
 ],
          Jazz: [
-          { title: "Fly Me To The Moon", artist: "Frank Sinatra", img "51.jpg", src: "songs/fly_me_to_the_moon.mp3" },
+          { title: "Fly Me To The Moon", artist: "Frank Sinatra", img: "51.jpg", src: "songs/fly_me_to_the_moon.mp3" },
           { title: "From The Start", artist: "Laufey", img: "52.jpg", src: "songs/from_the_start.mp3" },
           { title: "Dream A Little Dream Of Me", artist: "Ella Fitzgerald", img: "53.jpg", src: "songs/dream_a_little_dream.mp3" },
           { title: "Songbird", artist: "Eva Cassidy", img: "54.jpg", src: "songs/songbird.mp3" },
@@ -170,7 +170,7 @@ const songsData = {
 ],      
      "K-pop": [
           { title: "Bang Bang Bang", artist: "BIGBANG", img: "41.jpeg", src: "songs/bang_bang_bang.mp3" },
-          { title: "Love Shot", artist: "EXO", img "42.jpg", src: "songs/love_shot.mp3" },
+          { title: "Love Shot", artist: "EXO", img: "42.jpg", src: "songs/love_shot.mp3" },
           { title: "Super Shy", artist: "NewJeans", img: "43.jpg", src: "songs/super_shy.mp3" },
           { title: "Gangnam Style", artist: "PSY", img: "44.png", src: "songs/gangnam_style.mp3" },
           { title: "Gentleman", artist: "PSY", img: "45.jpg", src: "songs/gentleman.mp3" },
@@ -202,7 +202,7 @@ const songsData = {
       Pop: [
          { title: "Happy", artist: "Pharrell Williams", img: "11.jpg", src: "songs/happy.mp3" },
          { title: "Funkytown", artist: "Lipps Inc.", img: "12.jpg", src: "songs/funkytown.mp3" },
-         { title: "Dancing Queen", artist: "ABBA", img "13.png", src: "songs/dancing_queen.mp3" },
+         { title: "Dancing Queen", artist: "ABBA", img: "13.png", src: "songs/dancing_queen.mp3" },
          { title: "Shape Of You", artist: "Ed Sheeran", img: "14.png", src: "songs/shape_of_you.mp3" },
          { title: "Bye Bye Bye", artist: "*NSYNC", img: "15.jpg", src: "songs/bye_bye_bye.mp3" },
          { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", img: "403.jpg", src: "songs/uptown_funk.mp3" },
