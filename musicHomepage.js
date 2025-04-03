@@ -363,14 +363,15 @@ const songsData = {
                 { title: "Roar", artist: "Katy Perry", img: "258.jpg", src: "Katy Perry - Roar.mp3" },
                 { title: "Firework", artist: "Katy Perry", img: "259.jpg", src: "Katy Perry - Firework (Lyrics).mp3" },
                 { title: "Dark Horse", artist: "Katy Perry", img: "260.avif", src: "Katy Perry - Dark Horse ft. Juicy J.mp3" },
-                { title: "Teenage Dream", artist: "Katy Perry", img: "261.pn g", src: "Katy Perry - Dark Horse ft. Juicy J.mp3" },
-                { title: "Last Friday Night (T.G.I.F)", artist: "Katy Perry", img: "262.jKaty Perry - Last Friday Night (T.G.I.F) [Lyrics].mp3" },
+                { title: "Teenage Dream", artist: "Katy Perry", img: "261.png", src: "Katy Perry - Dark Horse ft. Juicy J.mp3" },
+                { title: "Last Friday Night (T.G.I.F)", artist: "Katy Perry", img: "262.jpg", src:"Katy Perry - Last Friday Night (T.G.I.F) [Lyrics].mp3" },
                 { title: "E.T", artist: "Katy Perry", img: "264.webp", src: "Katy Perry - E.T. (Audio).mp3" },
                 { title: "Wide Awake", artist: "Katy Perry", img: "265.jpg", src: "Katy Perry - Wide Awake (Official Video).mp3" },
                 { title: "The One That Got Away", artist: "Katy Perry", img: "266.jpg", src: "Katy Perry - The One That Got Away.mp3" },
                 { title: "Hot n Cold", artist: "Katy Perry", img: "267.jpg", src: "Katy Perry - Hot N Cold (Official Music Video).mp3" },
                 { title: "Part Of Me", artist: "Katy Perry", img: "268.jpg", src: "Katy Perry - Part Of Me (Official).mp3" },
                 { title: "Never Really Over", artist: "Katy Perry", img: "269.jpg", src: "Katy Perry - Never Really Over (Official Video).mp3" },
+                {title: "Cry About It Later", artist: "katy Perry", img: "201.jpg", src: "Katy Perry - Cry About It Later (The Smile Video Series).mp3"},
             ]
         },
          {
