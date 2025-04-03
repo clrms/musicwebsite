@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="search.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,6 +22,18 @@
             <li><a href="#" id="albumBtn">Album</a></li>
         </ul>
     </aside>
+
+    <header class="header1">
+      <h1 class="header">
+        SoundScoop
+      </h1>
+
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for a song..." oninput="searchMusic()">
+    </div>
+
+    <script src="search.js"></script>
+    </header>
 
     <!-- Main Content -->
     <main id="mainContent">
@@ -109,5 +126,6 @@
     <script src="mainPage.js"></script>
     <script src="musicHomepage.js"></script>
     <script src="mainPagePlayer.js"></script>
+    
 </body>
 </html>
