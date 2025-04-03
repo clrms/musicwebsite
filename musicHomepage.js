@@ -85,16 +85,16 @@ const songsData = {
     },
     genres: {
         Disco: [
-            { title: "Brother Louie", artist: "Modern Talking", img: "36.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Brother Louie", artist: "Modern Talking", img: "36.jpg", src: "Modern Talking - Brother Louie (lyrics).mp3" },
             { title: "Never Gonna Give You Up", artist: "Ricky Astley", img: "37.jpg", src: "Rick Astley - Never Gonna Give You Up (Official Music Video).mp3" },
             { title: "Sayaw Mga Choy", artist: "Dimas Jap", img: "38.jpg", src: "discobudots - SAYAW MGA CHOY ( DOYDOY DANCE  MATHEMATICS DANCE CHALLENGE ) ( Budots Remix ).mp3" },
-            { title: "Material Girl", artist: "Madonna", img: "39.jpg", src: "songs/as_it_was.mp3" },
-            { title: "Macarena", artist: "Los Del Rio", img: "40.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Material Girl", artist: "Madonna", img: "39.jpg", src: "Madonna - Material Girl (Lyrics).mp3" },
+            { title: "Macarena", artist: "Los Del Rio", img: "40.jpg", src: "Los Del Rio - Macarena (Lyrics).mp3" },
             { title: "Stayin'Alive", artist: "Bee Gees", img: "101.jpg", src: "Bee Gees - Stayin' Alive (Official Music Video).mp3" },
             { title: "I Will Survive", artist: "Gloria Gaynor", img: "102.jpg", src: "Gloria Gaynor - I Will Survive (Live From Her Majesty's, 13.10.1985).mp3" },
             { title: "Lee Freak", artist: "Chic", img: "103.jpg", src: "CHIC - Le Freak (Official Music Video).mp3 " },
             { title: "Funky Town", artist: "Lipps Inc.", img: "12.jpg", src: "Lipps Inc. - Funkytown (1980).mp3" },
-            { title: "Don't Leave Me This Way", artist: "Thelma Houston", img: "104.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Don't Leave Me This Way", artist: "Thelma Houston", img: "104.jpg", src: "Don't Leave Me This Way (Official Audio).mp3" },
             { title: "Boogie Wonderland", artist: "Earth, Win & Fire", img: "105.jpg", src: "Earth, Wind & Fire - Boogie Wonderland (Official Video).mp3" },
             { title: "Disco Inferno", artist: "The Trammps", img: "106.jpg", src: "The Trammps - Disco Inferno (Original Long Version - Tony Mendes Video Re Edit).mp3" },
         ],
@@ -114,10 +114,10 @@ const songsData = {
         ],
         Folk: [
             { title: "Here Comes The Sun", artist: "The Beatles", img: "16.jpg", src: "The Beatles - Here Comes The Sun (2019 Mix).mp3" },
-            { title: "Illegal Smile", artist: "John Prine", img: "17.jpg", src: "songs/as_it_was.mp3" },
-            { title: "Riptide", artist: "Vance Joy", img: "18.jpg", src: "songs/as_it_was.mp3" },
-            { title: "Time In A Bottle", artist: "Jim Croce", img: "19.jpg", src: "songs/as_it_was.mp3" },
-            { title: "The Lion's Roar", artist: "First Aid Kit", img: "20.jpg", src: "songs/as_it_was.mp3" },
+            { title: "Illegal Smile", artist: "John Prine", img: "17.jpg", src: "John Prine - Illegal Smile.mp3" },
+            { title: "Riptide", artist: "Vance Joy", img: "18.jpg", src: "Vance Joy - Riptide (Lyrics).mp3" },
+            { title: "Time In A Bottle", artist: "Jim Croce", img: "19.jpg", src: "Jim Croce - Time In A Bottle.mp3" },
+            { title: "The Lion's Roar", artist: "First Aid Kit", img: "20.jpg", src: "First Aid Kit - The Lion's Roar (with lyrics).mp3" },
             { title: "Blowin In The Wind", artist: "Bob Dylan", img: "113.jpg", src: "Bob Dylan - Blowin' in the Wind (Official Audio).mp3" },
             { title: "The Sound Of The Silence", artist: "Saimon & Garfunkel", img: "114.jpg", src: "Simon & Garfunkel - The Sound of Silence (from The Concert in Central Park).mp3" },
             { title: "Big Yellow Taxi", artist: "Joni Mitchell", img: "115.png", src: "Joni Mitchell - Big Yellow Taxi (Official Lyric Video).mp3" },
@@ -141,7 +141,7 @@ const songsData = {
             { title: "Brick House", artist: "Commodores", img: "128.jpg", src: "songs/brick_house.mp3" },
         ],
         HipHop: [
-          { title: "Low", artist: "Flo Rida ft. T-Pain", img: "6.JPG", src: "songs/low.mp3" },
+          { title: "Low", artist: "Flo Rida ft. T-Pain", img: "6.JPG", src: "Lenny Kravitz - Low (Official Video).mp3" },
           { title: "I'll Be Missing You", artist: "Puff Daddy ft. Faith Evans & 112", img: "7.jpg", src: "songs/missing_you.mp3" },
           { title: "Freaky Friday", artist: "Lil Dicky ft. Chris Brown", img: "8.jpg", src: "songs/freaky_friday.mp3" },
           { title: "Sunflower", artist: "Post Malone & Swae Lee", img: "9.jpg", src: "songs/sunflower.mp3" },
@@ -195,7 +195,7 @@ const songsData = {
          { title: "Kasama Kang Tumanda", artist: "Ogie Alcasid", img: "28.jpg", src: "songs/kasama_kang_tumanda.mp3" },
          { title: "Narda", artist: "Kamikazee", img: "29.jpg", src: "songs/narda.mp3" },
          { title: "Ikaw Na Nga", artist: "Willie Revillame", img: "30.jpg", src: "songs/ikaw_na_nga.mp3" },
-         { title: "Yesterday", artist: "The Beatles", img: "406.jpg", src: "songs/yesterday.mp3" },
+         { title: "Yesterday", artist: "The Beatles", img: "406.jpg", src: "The Beatles - Yesterday  (Lyrics).mp3" },
          { title: "Hotel California", artist: "Eagles", img: "407.png", src: "songs/hotel_california.mp3" },
 ],
   
@@ -219,8 +219,8 @@ const songsData = {
         { title: "As It Was", artist: "Harry Styles", img: "121.jpg", src: "songs/as_it_was.mp3" },
         { title: "Puff Me Up", artist: "Supafly", img: "62.jpg", src: "songs/lose_yourself.mp3" },
         { title: "Wag Ipagsabi", artist: "Dreycruz", img: "63.jpg", src: "songs/humble.mp3" },
-        { title: "Pasay 2 Qc", artist: "Nazty kidd, Nateman", img: "64.jpg", src: "songs/gods_plan.mp3" },
-        { title: "Subomoto", artist: "Zae, Hev Abi", img: "65.jpg", src: "songs/middle_child.mp3" },
+        { title: "Pasay 2 Qc", artist: "Nazty kidd, Nateman", img: "64.jpg", src: "Nazty Kidd - Pasay 2 QC feat. Nateman (Official Music Video).mp3" },
+        { title: "Subomoto", artist: "Zae, Hev Abi", img: "65.jpg", src: "Zae, Hev Abi - SUBOMOTO REMIX (Music Video).mp3" },
         { title: "Sicko Mode", artist: "Travis Scott", img: "163.jpg", src: "songs/sicko_mode.mp3" },
         { title: "Goosebumps", artist: "Travis Scott", img: "164.jpg", src: "songs/goosebumps.mp3" },
         { title: "Stan", artist: "Eminem", img: "165.jpg", src: "songs/stan.mp3" },
@@ -230,9 +230,9 @@ const songsData = {
 ],
 
    "Rock": [
-        { title: "That Wrong Turn", artist: "Metallica", img: "1.png", src: "songs/enter_sandman.mp3" },
-        { title: "Before The Dawn", artist: "Led Zeppelin", img: "2.png", src: "songs/stairway_to_heaven.mp3" },
-        { title: "Usok Asin", artist: "Pink Floyd", img: "3.png", src: "songs/comfortably_numb.mp3" },
+        { title: "Before The Dawn", artist: "Led Zeppelin", img: "2.png", src: "songs/stairway_to_heaven.mp3" }
+        { title: "Turn the Page", artist: "Metallica", img: "1.png", src:"Metallica_ Turn the Page (Official Music Video).mp3",}
+        { title: "Usok Asin", artist: "Pink Floyd", img: "3.png", src: "USOK (lyrics) By_ Asin.mp3" },
         { title: "Bote Dyaryo", artist: "Queen", img: "4.png", src: "songs/we_will_rock_you.mp3" },
         { title: "Slash", artist: "Guns N' Roses", img: "5.jpg", src: "songs/sweet_child_o_mine.mp3" },
         { title: "Thunderstruck", artist: "AC/DC", img: "405.jpg", src: "songs/thunderstruck.mp3" },
