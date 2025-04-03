@@ -1,4 +1,5 @@
 
+
 const songsData = {
     quickPlay: 
            [{ title: "Sandalan", artist: "6cyclemind", src: "6cyclemind - Sandalan (Lyrics).mp3", img: "2.png" },
@@ -230,8 +231,8 @@ const songsData = {
 ],
 
    "Rock": [
-        { title: "Before The Dawn", artist: "Led Zeppelin", img: "2.png", src: "songs/stairway_to_heaven.mp3" }
-        { title: "Turn the Page", artist: "Metallica", img: "1.png", src:"Metallica_ Turn the Page (Official Music Video).mp3",}
+        { title: "Before The Dawn", artist: "Led Zeppelin", img: "2.png", src: "songs/stairway_to_heaven.mp3" },
+        { title: "Turn the Page", artist: "Metallica", img: "1.png", src:"Metallica_ Turn the Page (Official Music Video).mp3"},
         { title: "Usok Asin", artist: "Pink Floyd", img: "3.png", src: "USOK (lyrics) By_ Asin.mp3" },
         { title: "Bote Dyaryo", artist: "Queen", img: "4.png", src: "songs/we_will_rock_you.mp3" },
         { title: "Slash", artist: "Guns N' Roses", img: "5.jpg", src: "songs/sweet_child_o_mine.mp3" },
