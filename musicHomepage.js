@@ -333,7 +333,7 @@ const songsData = {
                 { title: "Talking To The Moon", artist: "Bruno Mars", img: "241.jpg", src: "Bruno Mars - Talking To The Moon (Official Lyric Video).mp3" },
                 { title: "Locked Out Of Heaven", artist: "Bruno Mars", img: "242.jpg", src: "Bruno Mars - Locked Out Of Heaven (Official Music Video).mp3" },
                 { title: "That's What I Like", artist: "Bruno Mars", img: "243.jpg", src: "Bruno Mars - Thats What I Like [Official Music Video].mp3" },
-                { title: "Leave The Door Open", artist: "Bruno Mars", img: "244.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Leave The Door Open", artist: "Bruno Mars", img: "244.jpg", src: "Bruno Mars, Anderson .Paak, Silk Sonic - Leave the Door Open [Official Video].mp3" },
                 { title: "Finesse", artist: "Bruno Mars", img: "245.jpg", src: "Bruno Mars - Finesse (Remix) (feat. Cardi B) (Official Music Video).mp3" },
                 { title: "Count On Me", artist: "Bruno Mars", img: "246.jpg", src: "Bruno Mars - Count on Me (Official Lyric Video).mp3" },
             ]
@@ -363,7 +363,7 @@ const songsData = {
                 { title: "Roar", artist: "Katy Perry", img: "258.jpg", src: "Katy Perry - Roar.mp3" },
                 { title: "Firework", artist: "Katy Perry", img: "259.jpg", src: "Katy Perry - Firework (Lyrics).mp3" },
                 { title: "Dark Horse", artist: "Katy Perry", img: "260.avif", src: "Katy Perry - Dark Horse ft. Juicy J.mp3" },
-                { title: "Teenage Dream", artist: "Katy Perry", img: "261.png", src: "Katy Perry - Dark Horse ft. Juicy J.mp3" },
+                { title: "Teenage Dream", artist: "Katy Perry", img: "261.png", src: "Katy Perry - Teenage Dream (Official Music Video).mp3" },
                 { title: "Last Friday Night (T.G.I.F)", artist: "Katy Perry", img: "262.jpg", src:"Katy Perry - Last Friday Night (T.G.I.F) [Lyrics].mp3" },
                 { title: "E.T", artist: "Katy Perry", img: "264.webp", src: "Katy Perry - E.T. (Audio).mp3" },
                 { title: "Wide Awake", artist: "Katy Perry", img: "265.jpg", src: "Katy Perry - Wide Awake (Official Video).mp3" },
@@ -387,7 +387,7 @@ const songsData = {
                { title: "After the Love Has Gone", artist: "Earth, Wind & Fire", img: "276.jpg", src: "Earth, Wind & Fire - After The Love Has Gone (Audio).mp3" },
                { title: "Sing a Song", artist: "Earth, Wind & Fire", img: "277.jpg", src: "Earth, Wind & Fire - Sing a Song (Official Audio).mp3" },
                { title: "That's the Way of the World", artist: "Earth, Wind & Fire", img: "278.jpg", src: "Earth, Wind & Fire - That's the Way of the World (Official Audio).mp3" },
-               { title: "Serpentine Fire", artist: "Earth, Wind & Fire", img: "279.jpg", src: "sEarth, Wind & Fire - Serpentine Fire (Official Video).mp3" },
+               { title: "Serpentine Fire", artist: "Earth, Wind & Fire", img: "279.jpg", src: "Earth, Wind & Fire - Serpentine Fire (Official Video).mp3" },
                { title: "Got to Get You into My Life", artist: "Earth, Wind & Fire", img: "280.jpg", src: "Earth, Wind & Fire - Got to Get You Into My Life (Audio).mp3" },
                { title: "Mighty Mighty", artist: "Earth, Wind & Fire", img: "281.jpg", src: "Earth, Wind & Fire - Mighty Mighty (Official Audio).mp3" }
         ]
@@ -404,8 +404,8 @@ const songsData = {
             { title: "Lady By The Sea", artist: "Stephen Sanchez", img: "287.jpg", src: "Stephen Sanchez - Lady by the Sea.mp3" },
             { title: "Shake", artist: "Stephen Sanchez", img: "288.jpg", src: "Stephen Sanchez - Shake (Amazon Music Live).mp3" },
             { title: "Love life", artist: "Stephen Sanchez", img: "289.png", src: "Stephen Sanchez - Love Life (Official Audio).mp3" },
-            { title: "The Pool", artist: "Stephen Sanchez", img: "290.jpg", src: "songs/perfect_love.mp3" },
-            { title: "No One Knows", artist: "Stephen Sanchez", img: "291.webp", src: "songs/stay_with_me.mp3" },
+            { title: "The Pool", artist: "Stephen Sanchez", img: "290.jpg", src: "Stephen Sanchez - The Pool (Official Audio).mp3" },
+            { title: "No One Knows", artist: "Stephen Sanchez", img: "291.webp", src: "Stephen Sanchez, Laufey - No One Knows (Lyric Video).mp3" },
             { title: "Be More", artist: "Stephen Sanchez", img: "292.jpg", src: "STEPHEN SANCHEZ - BE MORE (VMA'S 2023).mp3" },
             { title: "The Thing Called Love", artist: "Stephen Sanchez", img: "293.jpg", src: "Stephen Sanchez - This Thing Called Love (Lyric Video) [9yyKV3ylbEg].mp3" }
         ]
