@@ -92,10 +92,10 @@ const songsData = {
           { title: "Stayin'Alive", artist: "Bee Gees", img: "101.jpg", src: "Bee Gees - Stayin' Alive (Official Music Video).mp3" },
           { title: "I Will Survive", artist: "Gloria Gaynor", img: "102.jpg", src: "Gloria Gaynor - I Will Survive (Live From Her Majesty's, 13.10.1985).mp3" },
           { title: "Lee Freak", artist: "Chic", img: "103.jpg", src: "CHIC - Le Freak (Official Music Video).mp3 " },
-          { title: "Disco Fever", artist: "VST & Company", img: "12.jpg", src: "Disco Fever (1978) - VST & Company.mp3" },
-          { title: "Where Have You Been My Disco", artist: "IV of Spades", img: "104.jpg", src: "Where Have You been My Disco_  IV OF SPADES (Lyrics).mp3" },
-          { title: "Awitin Mo, Isasayaw Ko", artist: "VST & Company", img: "105.jpg", src: "Awitin Mo, Isasayaw Ko - VST & Company [Official Lyric Video].mp3" },
-          { title: "Hey Barbara", artist: "IV of Spades", img: "106.jpg", src: "IV OF SPADES - Hey Barbara (Official Video).mp3" },
+          { title: "Disco Fever", artist: "VST & Company", img: "disco fever.jpg", src: "Disco Fever (1978) - VST & Company.mp3" },
+          { title: "Where Have You Been My Disco", artist: "IV of Spades", img: "where have you been.jpg", src: "Where Have You been My Disco_  IV OF SPADES (Lyrics).mp3" },
+          { title: "Awitin Mo, Isasayaw Ko", artist: "VST & Company", img: "awitin mo.jpg", src: "Awitin Mo, Isasayaw Ko - VST & Company [Official Lyric Video].mp3" },
+          { title: "Hey Barbara", artist: "IV of Spades", img: "hey barbs.jpg", src: "IV OF SPADES - Hey Barbara (Official Video).mp3" },
           { title: "Sayaw Mga Choy", artist: "Dimas Jap", img: "38.jpg", src: "discobudots - SAYAW MGA CHOY ( DOYDOY DANCE  MATHEMATICS DANCE CHALLENGE ) ( Budots Remix ).mp3" },
       ],
       Electronic: [
@@ -148,11 +148,11 @@ const songsData = {
         { title: "Lose Yourself", artist: "Eminem", img: "404.jpg", src: "Eminem - Lose Yourself [HD].mp3" },
         { title: "Sicko Mode", artist: "Travis Scott ft. Drake", img: "129.png", src: "Travis Scott - SICKO MODE ft. Drake.mp3" },
         { title: "God's Plan", artist: "Drake", img: "130.jpg", src: "Drake - God_s Plan (Lyric Video).mp3" },
-        { title: "Ice", artist: "ACDMND$", img: "404.jpg", src: "ACDMND$ & Jimmy Pablo - ICE (Official Music Video).mp3" },
-        { title: "Zebbiana", artist: "Skusta Clee", img: "132.jpg", src: "Zebbiana - Skusta Clee ( Official Lyrics.mp3" },
-        { title: "Miracle Nights", artist: "Almost", img: "133.jpg", src: "Miracle Nights - ALLMOST (BASS BOOSTED  LYRICS).mp3" },
-        { title: "Balagbag", artist: "Don Pao", img: "134.jpg", src: "BALAGBAG - Don pao ft Flow G (musiCLyrics).mp3" },
-        { title: "Sobrang Solid", artist: "Nik Makino", img: "135.jpeg", src: "Nik Makino - SOBRANG SOLID (feat. NEXXFRIDAY).mp3" }
+        { title: "Ice", artist: "ACDMND$", img: "ice.jpg", src: "ACDMND$ & Jimmy Pablo - ICE (Official Music Video).mp3" },
+        { title: "Zebbiana", artist: "Skusta Clee", img: "zeb.jpg", src: "Zebbiana - Skusta Clee ( Official Lyrics.mp3" },
+        { title: "Miracle Nights", artist: "Almost", img: "miracle.jpg", src: "Miracle Nights - ALLMOST (BASS BOOSTED  LYRICS).mp3" },
+        { title: "Balagbag", artist: "Don Pao", img: "balagbag.jpg", src: "BALAGBAG - Don pao ft Flow G (musiCLyrics).mp3" },
+        { title: "Sobrang Solid", artist: "Nik Makino", img: "sobrang solid.jpg", src: "Nik Makino - SOBRANG SOLID (feat. NEXXFRIDAY).mp3" }
 ],
        Jazz: [
         { title: "Fly Me To The Moon", artist: "Frank Sinatra", img: "46.jpg", src: "Fly Me To The Moon (2008 Remastered).mp3" },
@@ -162,11 +162,11 @@ const songsData = {
         { title: "My Foolish Heart", artist: "Bill Evans", img: "50.jpg", src: "Bill Evans-My Foolish Heart.mp3" },
         { title: "Take Five", artist: "Dave Brubeck", img: "136.jpg", src: "Dave Brubeck - Take Five.mp3" },
         { title: "What A Wonderful World", artist: "Louis Armstrong", img: "137.jpg", src: "Louis Armstrong - What A Wonderful World (Official Video).mp3" },
-        { title: "Ikaw Lang", artist: "Raffi Quijano", img: "138.jpg", src: "Ikaw Lang.mp3" },
-        { title: "Para Sa Akin", artist: "Sitti", img: "139.jpg", src: "Para Sa Akin.mp3" },
-        { title: "Chinito", artist: "Yeng Constantino", img: "140.jpg", src: "Chinito - Yeng Constantino (Music Video).mp3" },
-        { title: "Sa Mata Makikita", artist: "Roel Cortez", img: "141.jpg", src: "Roel Cortez - Sa Mata Makikita (Official Lyric Video).mp3" },
-        { title: "Kabilugan Ng Buwan", artist: "Apo Hiking Society", img: "142.jpg", src: "APO Hiking Society - Kabilugan Ng Buwan (Official Lyric Video).mp3" }
+        { title: "Ikaw Lang", artist: "Raffi Quijano", img: "ikaw lang.jpg", src: "Ikaw Lang.mp3" },
+        { title: "Para Sa Akin", artist: "Sitti", img: "para sa akin.jpg", src: "Para Sa Akin.mp3" },
+        { title: "Chinito", artist: "Yeng Constantino", img: "chinito.jpg", src: "Chinito - Yeng Constantino (Music Video).mp3" },
+        { title: "Sa Mata Makikita", artist: "Roel Cortez", img: "sa mata makikita.jpg", src: "Roel Cortez - Sa Mata Makikita (Official Lyric Video).mp3" },
+        { title: "Kabilugan Ng Buwan", artist: "Apo Hiking Society", img: "kabilugan ng buwan.jpg", src: "APO Hiking Society - Kabilugan Ng Buwan (Official Lyric Video).mp3" }
 ],      
       "K-pop": [
         { title: "Bang Bang Bang", artist: "BIGBANG", img: "41.jpeg", src: "Bang Bang Bang.mp3" },
@@ -193,8 +193,8 @@ const songsData = {
        { title: "Yesterday", artist: "The Beatles", img: "406.jpg", src: "The Beatles - Yesterday  (Lyrics).mp3" },
        { title: "Hotel California", artist: "Eagles", img: "407.png", src: "Eagles - Hotel California (Official Audio).mp3" },
        { title: "Kahit Maputi Na Ang Buhok Ko", artist: "Rey Valera", img: "26.jpg", src: "Rey Valera - Kahit Maputi Na Ang Buhok Ko [Official Lyric Video].mp3" },
-       { title: "Ako'y Sayo Ika'y Akin Lamang", artist: "IAXE", img: "27.jpg", src: "Ako_y Sayo Ika_y Akin Lamang - Daniel Padilla (Lyrics)  DJ Greatest Hits.mp3" },
-       { title: "Kasama Kang Tumanda", artist: "Ogie Alcasid", img: "28.jpg", src: "KASAMA KANG TUMANDA - DANIEL PADILLA.mp3" },
+       { title: "Ako'y Sayo Ika'y Akin Lamang", artist: "Daniel Padilla", img: "27.jpg", src: "Ako_y Sayo Ika_y Akin Lamang - Daniel Padilla (Lyrics)  DJ Greatest Hits.mp3" },
+       { title: "Kasama Kang Tumanda", artist: "Daniel Padilla", img: "28.jpg", src: "KASAMA KANG TUMANDA - DANIEL PADILLA.mp3" },
        { title: "Narda", artist: "Kamikazee", img: "29.jpg", src: "Wille Revillame - Ikaw Na Nga (Official Lyric Video).mp3" },
        { title: "Ikaw Na Nga", artist: "Willie Revillame", img: "30.jpg", src: "Kamikazee - Narda (Official Lyric Video).mp3" }
        
@@ -208,11 +208,11 @@ const songsData = {
        { title: "Bye Bye Bye", artist: "*NSYNC", img: "15.jpg", src: "NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack).mp3" },
        { title: "Uptown Funk", artist: "Mark Ronson ft. Bruno Mars", img: "403.jpg", src: "Mark Ronson - Uptown Funk (Official Video) ft. Bruno Mars.mp3" },
        { title: "Can't Stop The Feeling!", artist: "Justin Timberlake", img: "157.jpg", src: "The Weeknd - Blinding Lights (Official Video).mp3" },
-       { title: "Sining", artist: "Dionela", img: "158.jpg", src: "Dionela - sining (Lyrics) ft. Jay R.mp3" },
-       { title: "Pagsamo", artist: "Arthur Nery", img: "159.png", src: "Arthur Nery - Pagsamo (Lyrics).mp3" },
+       { title: "Sining", artist: "Dionela", img: "sining.jpg", src: "Dionela - sining (Lyrics) ft. Jay R.mp3" },
+       { title: "Pagsamo", artist: "Arthur Nery", img: "pagsamo.jpg", src: "Arthur Nery - Pagsamo (Lyrics).mp3" },
        { title: "Marilag", artist: "Dionela", img: "marilag.jpg", src: "Dionela - Marilag (Official Lyric Video).mp3" },
-       { title: "Rainbow", artist: "South Border", img: "161.jpg", src: "South Border - Rainbow (Lyric).mp3" },
-       { title: "Weak", artist: "Michael Pangilinan", img: "162.jpg", src: "Michael Pangilinan - Weak (Cover) Lyrics.mp3" }
+       { title: "Rainbow", artist: "South Border", img: "rainbow.jpg", src: "South Border - Rainbow (Lyric).mp3" },
+       { title: "Weak", artist: "Michael Pangilinan", img: "weak.jpg", src: "Michael Pangilinan - Weak (Cover) Lyrics.mp3" }
 
 ],
      Rap: [
@@ -223,7 +223,7 @@ const songsData = {
       { title: "Money Trees", artist: "Kendrick Lamar", img: "167.jpg", src: "Kendrick Lamar - Money Trees (Feat. Jay Rock).mp3" },
       { title: "God's Plan", artist: "Drake", img: "168.png", src: "Drake - God_s Plan (Lyric Video).mp3" },
       { title: "Fly Baby", artist: "Supafly", img: "61.jpg", src: "Fly Baby - Supafly ft. Sica (Lyrics).mp3" }, 
-      { title: "Gayuma", artist: "Abra", img: "121.jpg", src: "Gayuma (Lyrics) - Abra (ft. Thyro & Jeriko Aguilar).mp3" },
+      { title: "Gayuma", artist: "Abra", img: "gayuma.jpg", src: "Gayuma (Lyrics) - Abra (ft. Thyro & Jeriko Aguilar).mp3" },
       { title: "Puff Me Up", artist: "Supafly", img: "62.jpg", src: "SUPAFLY - PUFF ME UP (Ft. Gat Putch, Gaspari, OG Cry, Ghoti scale, Sica).mp3" },
       { title: "Wag Ipagsabi", artist: "Dreycruz", img: "63.jpg", src: "Dreycruz ft. Bert Symoun - Wag Ipagsabi (Official Music Video).mp3" },
       { title: "Pasay 2 Qc", artist: "Nazty kidd, Nateman", img: "64.jpg", src: "Nazty Kidd - Pasay 2 QC feat. Nateman (Official Music Video).mp3" },
@@ -238,9 +238,9 @@ const songsData = {
       { title: "Smells Like Teen Spirit", artist: "Nirvana", img: "169.jpg", src: "Nirvana - Smells Like Teen Spirit (Official Music Video).mp3" },
       { title: "Hotel California", artist: "Eagles", img: "170.jpg", src: "Eagles - Hotel California (Official Audio).mp3" },
       { title: "Bohemian Rhapsody", artist: "Queen", img: "172.jpg", src: "Queen  Bohemian Rhapsody (Official Video Remastered).mp3" },
-      { title: "Ligaya", artist: "Eraserheads", img: "171.jpg", src: "Eraserheads - Ligaya [Lyric Video].mp3" },
-      { title: "Kisapmata", artist: "Rivermaya", img: "173.png", src: "Rivermaya - Kisapmata.mp3" },
-      { title: "Ang Huling El Bimbo", artist: "Eraserheads", img: "174.jpg", src: "Eraserheads - Ang Huling El Bimbo [Lyric Video].mp3" },
+      { title: "Ligaya", artist: "Eraserheads", img: "ligaya.jpg", src: "Eraserheads - Ligaya [Lyric Video].mp3" },
+      { title: "Kisapmata", artist: "Rivermaya", img: "kisapmata.jpg", src: "Rivermaya - Kisapmata.mp3" },
+      { title: "Ang Huling El Bimbo", artist: "Eraserheads", img: "bimbo.jpg", src: "Eraserheads - Ang Huling El Bimbo [Lyric Video].mp3" },
       { title: "Usok", artist: "Asin", img: "3.png", src: "USOK (lyrics) By_ Asin.mp3" },
       { title: "Bote Dyaryo", artist: "Abrakadabra", img: "4.jpg", src: "Bote_t Dyaryo.mp3" },
 ],
