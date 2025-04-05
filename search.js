@@ -1,4 +1,4 @@
-const songsData = [
+const musicData = [
   { title: "Song 1", url: "audio.mp3" },
   { title: "Song 2", url: "music/song2.mp3" },
   { title: "Song 3", url: "music/song3.mp3" },
