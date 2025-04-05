@@ -62,7 +62,8 @@ header {
   width: 100%;
   color: #b1eaff;
   font-size: 1rem;
-  position: absolute;
+  position: fixed;
+  z-index: 5;
 }
 
 .header {
