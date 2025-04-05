@@ -316,8 +316,8 @@ const songsData = {
                 { title: "Lipad", artist: "Syd Hartha", img: "229.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Hiwaga", artist: "Syd Hartha", img: "230.webp", src: "songs/as_it_was.mp3" },
                 { title: "Kung Nag-aatubili", artist: "Syd Hartha", img: "231.jpg", src: "songs/as_it_was.mp3" },
-                { title: "Oro", artist: "Syd Hartha", img: "232.jpg", src: "songs/as_it_was.mp3" },
-                { title: "Ayaw Mo Naba?", artist: "Syd Hartha", img: "234.webp", src: "songs/as_it_was.mp3" },
+                { title: "3:15", artist: "Syd Hartha", img: "232.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Damdamin!", artist: "Syd Hartha", img: "234.webp", src: "songs/as_it_was.mp3" },
             ]
         },
         {
