@@ -230,11 +230,11 @@ const songsData = {
 ],
 
    "Rock": [
-        { title: "Before The Dawn", artist: "Led Zeppelin", img: "2.png", src: "Judas Priest - Before the Dawn (Official Audio).mp3" },
+        { title: "Before The Dawn", artist: "Judas Priest", img: "2.png", src: "Judas Priest - Before the Dawn (Official Audio).mp3" },
         { title: "Turn the Page", artist: "Metallica", img: "1.png", src:"Metallica_ Turn the Page (Official Music Video).mp3"},
         { title: "Usok", artist: "Asin", img: "3.png", src: "USOK (lyrics) By_ Asin.mp3" },
         { title: "Bote Dyaryo", artist: "Abrakadabra", img: "4.jpg", src: "Bote_t Dyaryo.mp3" },
-        { title: "Slash", artist: "Brian Johnson", img: "5.jpg", src: "Slash feat. Brian Johnson - Killing Floor (Official Music Video).mp3" },
+        { title: "Killing Floor", artist: "Slash", img: "5.jpg", src: "Slash feat. Brian Johnson - Killing Floor (Official Music Video).mp3" },
         { title: "Thunderstruck", artist: "AC/DC", img: "405.jpg", src: "ACDC - Thunderstruck (Official Video).mp3" },
         { title: "Smells Like Teen Spirit", artist: "Nirvana", img: "169.jpg", src: "Nirvana - Smells Like Teen Spirit (Official Music Video).mp3" },
         { title: "Hotel California", artist: "Eagles", img: "170.jpg", src: "Eagles - Hotel California (Official Audio).mp3" },
@@ -263,8 +263,8 @@ const songsData = {
                 { title: "Traitor", artist: "Olivia Rodrigo", img: "194.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Happier", artist: "Olivia Rodrigo", img: "195.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Brutal", artist: "Olivia Rodrigo", img: "196.jpg", src: "songs/as_it_was.mp3" },
-                { title: "Favorite Crime", artist: "Olivia Rodrigo", img: "197.jpg", src: "songs/as_it_was.mp3" },
-                { title: "Jealousy", artist: "Olivia Rodrigo", img: "402.jpg", src: "songs/as_it_was.mp3" },   
+                { title: "Favorite Crime", artist: "Olivia Rodrigo", img: "197.jpg", src: "Olivia Rodrigo - favorite crime (Lyric Video).mp3" },
+                { title: "Jealousy, Jealousy", artist: "Olivia Rodrigo", img: "402.jpg", src: "Olivia Rodrigo - jealousy, jealousy (Lyric Video).mp3" },   
             ]
         },
         {
@@ -281,14 +281,14 @@ const songsData = {
                 { title: "Kathang Isip", artist: "Ben & Ben", img: "205.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Leaves", artist: "Ben & Ben", img: "206.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Di ka sayang", artist: "Ben & Ben", img: "207.png", src: "songs/as_it_was.mp3" },
-                { title: "Pagtingin", artist: "Ben & Ben", img: "208.jpg", src: "songs/as_it_was.mp3" },
-                { title: "Araw-Araw", artist: "Ben & Ben", img: "209.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Pagtingin", artist: "Ben & Ben", img: "208.jpg", src: "Ben&Ben - Pagtingin  Official Music Video.mp3" },
+                { title: "Araw-Araw", artist: "Ben & Ben", img: "209.jpg", src: "Ben&Ben - Araw-Araw (Lyrics).mp3" },
             ]
         },{
             artist: "SB19",
             albumImg: "sb19.jpg",
             songs: [
-                { title: "Dam", artist: "SB19", img: "210.jpg", src: "songs/love_story.mp3" },
+                { title: "Dam", artist: "SB19", img: "210.jpg", src: "SB19 - DAM.mp3" },
                 { title: "Gento", artist: "SB19", img: "211.jpg", src: "songs/you_belong_with_me.mp3" },
                 { title: "Mapa", artist: "SB19", img: "212.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Bazinga", artist: "SB19", img: "213.jpg", src: "songs/as_it_was.mp3" },
@@ -298,8 +298,8 @@ const songsData = {
                 { title: "Ikako", artist: "SB19", img: "217.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Freedom", artist: "SB19", img: "218.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Alab", artist: "SB19", img: "219.jpg", src: "songs/as_it_was.mp3" },
-                { title: "WYAT(Where You At)", artist: "SB19", img: "220.jpg", src: "songs/as_it_was.mp3" },
-                { title: "What", artist: "SB19", img: "221.jpg", src: "songs/as_it_was.mp3" },
+                { title: "WYAT(Where You At)", artist: "SB19", img: "220.jpg", src: "SB19 sings 'WYAT (Where You At)'.mp3" },
+                { title: "What", artist: "SB19", img: "221.jpg", src: "SB19 'What_' Official MV.mp3" },
             ]
         },
         {
@@ -310,7 +310,7 @@ const songsData = {
                 { title: "Iglap", artist: "Syd Hartha", img: "223.jpg", src: "songs/without_me.mp3" },
                 { title: "Paru Paro", artist: "Syd Hartha", img: "224.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Panalangin", artist: "Syd Hartha", img: "225.jpg", src: "songs/as_it_was.mp3" },
-                { title: "Ayaw", artist: "Syd Hartha", img: "226.jpg", src: "songs/as_it_was.mp3" },
+                { title: "Ayaw", artist: "Syd Hartha", img: "226.jpg", src: "syd hartha - ayaw (Official Music Video).mp3" },
                 { title: "Gabay", artist: "Syd Hartha", img: "227.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Pakay", artist: "Syd Hartha", img: "228.jpg", src: "songs/as_it_was.mp3" },
                 { title: "Lipad", artist: "Syd Hartha", img: "229.jpg", src: "songs/as_it_was.mp3" },
