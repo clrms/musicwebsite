@@ -65,11 +65,11 @@ const songsData = {
           { title: "September", artist: "Earth, Wind & Fire", img: "270.jpg", src: "Earth, Wind & Fire - September (Official HD Video).mp3" },
           { title: "Until I Found You", artist: "Stephen Sanchez", img: "282.jpg", src: "Stephen Sanchez - Until I Found You (Lyrics).mp3" },
           { title: "Rap God", artist: "Eminem", img: "309.jpg", src: "Rap God - Eminem.mp3" },
-          { title: "As It Was", artist: "Harry Styles", img: "images/as_it_was.jpg", src: "songs/as_it_was.mp3" },
+          { title: "Dynamite", artist: "BTS", img: "144.jpg", src: "BTS (방탄소년단) 'Dynamite' Official MV.mp3" },
           { title: "No Vaseline", artist: "Ice Cube", img: "320.jpg", src: "No Vaseline.mp3" },
       ],
       Popular: [
-          { title: "Take Me Home, Country Roads", artist: "John Denver", img: "John Denver", src: "John Denver - Take Me Home, Country Roads (Official Audio).mp3" },
+          { title: "Take Me Home, Country Roads", artist: "John Denver", img: "116.jpg", src: "John Denver - Take Me Home, Country Roads (Official Audio).mp3" },
           { title: "Hotel California", artist: "Eagles", img: "407.png", src: "Eagles - Hotel California (Official Audio).mp3" },
           { title: "Yesterday", artist: "The Beatles", img: "406.jpg", src: "The Beatles - Yesterday  (Lyrics).mp3" },
           { title: "Firework", artist: "Katy Perry", img: "162.jpg", src: "Katy Perry - Firework (Lyrics).mp3" },
